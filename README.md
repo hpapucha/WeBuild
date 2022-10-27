@@ -15,6 +15,9 @@ We will use figma to model and generate the design and then whatever the
 values are and we will be converting those to vh(viewhight) and vw(viewwidth) in order
 to get the website to be responsive so when you shrink it it will scale acordingly. 
 Figma to HTML does everything in PX which needs to be converted to vh vw and em
+Also it generates generic class names and mostly divs so we have to rename everything to the semantic meaning 
+of html tags 
+For example it is generating class (a123) for a button, we have the change that to for example (main_button)
 
 also when you are coding something use the dev branch instead of main branch
 Always do a git pull before starting to work on something so you get the new version
