@@ -19,6 +19,7 @@ border-radius: 3.125em;
 
 }
 
+
 .logo {
   position: absolute;
 width: 100px;
@@ -28,6 +29,8 @@ top: 11px;
 
 background: #B9A99C;
 }
+
+
   h1 {
     color: blue;
   }
