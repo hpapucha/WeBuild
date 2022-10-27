@@ -1,0 +1,27 @@
+body {
+  position: relative;
+  width: 107.36111vw;
+  height: 415.48780vh;
+  
+  background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%);
+  }
+
+header {
+
+position: absolute;
+width: 101.38888vw;
+height: 12.1951vh;
+left: 2.6875em;
+top: 0.6875em;
+
+background: #C2B4A9;
+border-radius: 3.125em;
+
+}
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
+  
