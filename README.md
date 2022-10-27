@@ -8,3 +8,14 @@ https://docs.github.com/en/get-started/importing-your-projects-to-github/importi
 https://www.freecodecamp.org/news/git-checkout-explained/
 
 https://training.github.com/downloads/github-git-cheat-sheet/
+
+In the resources menu in figma > Plugins>Install figma plugin "Figma to HTML"
+This allows you to generate the css and html for the elements and export to file
+We will use figma to model and generate the design and then whatever the 
+values are and we will be converting those to vh(viewhight) and vw(viewwidth) in order
+to get the website to be responsive so when you shrink it it will scale acordingly. 
+Figma to HTML does everything in PX which needs to be converted to vh vw and em
+
+also when you are coding something use the dev branch instead of main branch
+Always do a git pull before starting to work on something so you get the new version
+or you will have issues with the versions 
