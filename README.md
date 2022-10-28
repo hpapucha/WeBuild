@@ -22,3 +22,11 @@ For example it is generating class (a123) for a button, we have the change that 
 also when you are coding something use the dev branch instead of main branch
 Always do a git pull before starting to work on something so you get the new version
 or you will have issues with the versions
+
+TODO UNTIL NEXT CLASS:
+Pedro: navbar/design
+Hristo: Middle text/button/github versioning/read md, exaplanation of stuff
+Elena: PUT HERE
+Archana: PUT HERE 
+For the rest we need Feature description page which is Desktop 2
+AND Features page which is Desktop 3 in Figma to be turned into HTML/CSS
