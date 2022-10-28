@@ -1,24 +1,19 @@
 body {
   position: relative;
-  width: 107.36111vw;
-  height: 415.48780vh;
+  width: 100vw;
+  height: 100vh;
   
   background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%);
   }
 
 header {
-
 position: absolute;
-width: 101.38888vw;
-height: 12.1951vh;
-left: 2.6875em;
+width: 100vw;
+height: 12.1951vh; 
 top: 0.6875em;
-
 background: #C2B4A9;
 border-radius: 3.125em;
-
 }
-
 
 .logo {
   position: absolute;
@@ -29,8 +24,6 @@ top: 11px;
 
 background: #B9A99C;
 }
-
-
   h1 {
     color: blue;
   }
@@ -38,3 +31,35 @@ background: #B9A99C;
     color: red;
   }
   
+.weBuild {
+position: absolute;
+width: 38.27vw;
+height: 14.87vh;
+left: 7em;
+top: 5em;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 800;
+/* font-size: 100px; */
+line-height: 126px;
+
+/* identical to box height */
+letter-spacing: 0.3em;
+
+color: #B9A99C;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1200px) {
+  .weBuild{
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .weBuild {
+    font-size: 50px;
+  }
+}
