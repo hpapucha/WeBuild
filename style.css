@@ -49,6 +49,7 @@ background: #B9A99C;
     line-height: 126px;
     /* identical to box height */
     letter-spacing: 0.3em;
+    text-align: center;
     
     color: black;
     }
@@ -73,4 +74,31 @@ background: #B9A99C;
     
     color: black;
     }
+}
+
+@media screen and (max-width: 800px) {
+  .slogan {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: black;
+  }
+  }
+  @media screen and (min-width: 801px) {
+    .slogan {
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      color: black;
+    }
+}
+@media screen and (max-width: 800px) {
+.siteName {
+  font-size: 50px;
+  letter-spacing: 0.2em;
+}
+}
+
+@media screen and (min-width: 801px) {
+  .siteName {
+    font-size: 90px;
+  }
 }
