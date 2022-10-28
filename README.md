@@ -25,8 +25,7 @@ or you will have issues with the versions
 
 TODO UNTIL NEXT CLASS:
 Pedro: navbar/design
-Hristo: Middle text/button/github versioning/read md, exaplanation of stuff
-Elena: PUT HERE
-Archana: PUT HERE 
-For the rest we need Feature description page which is Desktop 2
-AND Features page which is Desktop 3 in Figma to be turned into HTML/CSS
+Hristo: Middle text/button/github versioning/read md, begin footer
+Elena: Information of Product or Feature Section pick one ( see figma design)
+Archana: Information of Product or Feature Section pick one ( see figma design)
+
