@@ -1,29 +1,66 @@
 body {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
   
+  width: 100%;
+  min-height: 100vh;
   background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%);
+  font-family: 'Outfit', Roboto;
   }
 
-header {
-position: absolute;
-width: 100vw;
-height: 12.1951vh; 
-top: 0.6875em;
-background: #C2B4A9;
-border-radius: 3.125em;
-}
+  header div .container {
+    margin: 0;
+    width: 80%;
+  }
+  header{
+    
+    max-height: 5vh;
+    background: #C2B4A9;
+    border-radius: 20px;
+  }
 
-.logo {
-  position: absolute;
-width: 100px;
-height: 100px;
-left: 43px;
-top: 11px;
+  header ::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-background: #B9A99C;
-}
+
+  .logo {
+    
+    margin-left: 50;
+    
+    float: left;
+    width: 20vw;
+    height: 20vh;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0 50px;
+    padding-top: 15px;
+    
+
+
+  }
+
+  nav li a{ 
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  
+
+
 
 /* WEBUILD SPAN TREATED AS ONE BLOCK */
 /* If the screen size is 801px wide or more, set the font-size of <div> to 80px */
