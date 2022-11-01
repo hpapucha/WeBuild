@@ -1,40 +1,254 @@
 body {
-  position: relative;
-  width: 107.36111vw;
-  height: 415.48780vh;
   
+  width: 100%;
+  min-height: 100vh;
   background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%);
+  font-family: 'Outfit', Roboto;
   }
 
-header {
-
-position: absolute;
-width: 101.38888vw;
-height: 12.1951vh;
-left: 2.6875em;
-top: 0.6875em;
-
-background: #C2B4A9;
-border-radius: 3.125em;
-
-}
-
-
-.logo {
-  position: absolute;
-width: 100px;
-height: 100px;
-left: 43px;
-top: 11px;
-
-background: #B9A99C;
-}
-
-
-  h1 {
-    color: blue;
+  header div .container {
+    margin: 0;
+    width: 80%;
   }
-  p {
-    color: red;
+  header{
+    
+    max-height: 5vh;
+    background: #C2B4A9;
+    border-radius: 20px;
   }
+
+  header ::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .logo {
+    
+    margin-left: 50;
+    
+    float: left;
+    width: 20vw;
+    height: 20vh;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0 50px;
+    padding-top: 15px;
+    
+
+
+  }
+
+  nav li a{ 
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+
   
+
+
+
+/* WEBUILD SPAN TREATED AS ONE BLOCK */
+/* If the screen size is 801px wide or more, set the font-size of <div> to 80px */
+/* This makes the text shrink when you resize the window bellow and above 800 px; */
+@media screen and (min-width: 801px) {
+  .weBuild {
+    position: absolute;
+    width: 38.27vw;
+    height: 14.87vh;
+    left: 7em;
+    top: 3em;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    /* font-size: 100px; */
+    line-height: 126px;
+    /* identical to box height */
+    letter-spacing: 0.3em;
+    text-align: center;
+    
+    color: black;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 50px */
+@media screen and (max-width: 800px) {
+  .weBuild {
+    position: absolute;
+    width: 38.27vw;
+    height: 14.87vh;
+    left: 4em;
+    top: 5em;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 126px;
+    letter-spacing: 0.3em;
+    font-size: 50px;
+    
+    color: black;
+    }
+}
+/* SITE NAME WEBUILD CODE */
+@media screen and (max-width: 800px) {
+.siteName {
+  font-size: 50px;
+  letter-spacing: 0.2em;
+}
+}
+
+@media screen and (min-width: 801px) {
+  .siteName {
+    font-size: 90px;
+  }
+}
+
+/* SLOGAN "WHERE YOU BUILD YOUR BUSINES CARD CODE" */
+@media screen and (max-width: 800px) {
+  .slogan {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: black;
+    
+  }
+  }
+  @media screen and (min-width: 801px) {
+    .slogan {
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      color: black;
+    }
+}
+/* EXPLORE BUTTON  */
+@media screen and (max-width: 800px) {
+  .explore {
+    position: absolute;
+    left: 2em;
+    top: 5em;
+    margin-top: 3em;
+    background: #F2C254;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+  }
+  }
+  @media screen and (min-width: 801px) {
+    .explore {
+      position: relative;
+      text-align: center;
+      
+      
+      background: #F2C254;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 25px;
+    }
+}
+
+
+
+
+  /* FOOTER CODE */
+  footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    color: white;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 15px;
+    color: white;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    /* padding: 20px; */
+    padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:white;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+  
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: yellow;
+}
+      
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+
+
+
+
+
+
+  
+
