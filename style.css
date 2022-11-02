@@ -5,13 +5,22 @@ body {
   background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%);
   font-family: 'Outfit', Roboto;
   }
+  @media screen and (min-width: 801px){
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+}
 
+@media screen and (max-width: 800px){
   header div .container {
     margin: 0;
     width: 80%;
   }
+}
+
   header{
-    
+    min-height:5vh;
     max-height: 5vh;
     background: #C2B4A9;
     border-radius: 20px;
@@ -23,18 +32,28 @@ body {
     clear: both;
   }
 
-
+@media screen and (min-width: 801px){
   .logo {
-    
-    margin-left: 50;
-    
+    margin-left: -20px;
+    margin-top: -66px;
     float: left;
     width: 20vw;
     height: 20vh;
   }
+}
 
+@media screen and (max-width: 800px){
+  .logo {
+    margin-left: -20px;
+    margin-top: -30px;
+    float: left;
+    width: 20vw;
+    height: 20vh;
+  }
+}
+  
   nav {
-    float: right;
+    text-align: center;
   }
 
   nav ul{
@@ -42,14 +61,20 @@ body {
     padding: 0;
     list-style: none;
   }
-
+  @media screen and (min-width: 801px){
   nav li {
     display: inline-block;
     margin: 0 50px;
-    padding-top: 15px;
-    
+    padding-top: 0.5em;
+  }
+  }
 
-
+  @media screen and (max-width: 800px){
+    nav li {
+      display: inline-block;
+      margin: 0 50px;
+      padding-top: 0.1em;
+    }
   }
 
   nav li a{ 
