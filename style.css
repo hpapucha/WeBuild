@@ -1,3 +1,75 @@
+/* Pedro start of work */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.main-nav a {
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #343534;
+  text-decoration: none;
+}
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+	width: 960px;
+	max-width: 100%;
+	padding: 1px;
+	margin: 0 auto;
+}
+
+.main-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+  
+
+}
+
+.main-nav ul {
+	margin: 1em 0 .5em;
+	text-align: center;
+}
+
+.main-nav li {
+	display: inline;
+}
+.main-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 15px;
+}
+
+.main-header {
+  background-color: #C2B4A9;
+  border-radius: 25px;
+}
+
+.WB-logo {
+  margin: -100px 0px -110px 0px;
+  
+}
+
+
+@media (min-width: 960px) {
+	.main-header .container {
+		justify-content: space-between;
+	}
+}
+
+/* Pedro end of work */
+
 body {
   
   width: 100%;
@@ -19,20 +91,29 @@ body {
   }
 }
 
-  header{
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  justify-items: stretch;
+}
+
+  /* header{
     min-height:5vh;
     max-height: 5vh;
     background: #C2B4A9;
     border-radius: 20px;
-  }
+  } */
 
-  header ::after{
+  /* header ::after{
     content: "";
     display: table;
     clear: both;
-  }
+  } */
 
-@media screen and (min-width: 801px){
+/* @media screen and (min-width: 801px){
   .logo {
     margin-left: -20px;
     margin-top: -66px;
@@ -40,9 +121,9 @@ body {
     width: 20vw;
     height: 20vh;
   }
-}
+} */
 
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
   .logo {
     margin-left: -20px;
     margin-top: -30px;
@@ -81,7 +162,7 @@ body {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-  }
+  } */
 
 /* WEBUILD SPAN TREATED AS ONE BLOCK */
 /* If the screen size is 801px wide or more, set the font-size of <div> to 80px */
