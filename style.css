@@ -83,10 +83,6 @@ body {
     text-transform: uppercase;
   }
 
-  
-
-
-
 /* WEBUILD SPAN TREATED AS ONE BLOCK */
 /* If the screen size is 801px wide or more, set the font-size of <div> to 80px */
 /* This makes the text shrink when you resize the window bellow and above 800 px; */
@@ -187,15 +183,23 @@ body {
 
 
   /* FOOTER CODE */
+  /*Hristo Start*/
+
+  .logoFooter {
+    margin: 1em 0 0.5em;
+    float: left;
+    width: 10em;
+    height: 10em;
+  }
+  
   footer{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
-    height: auto;
+    height: 5vh;
     width: 100vw;
-    color: white;
+    color: black;
 }
 .footer-content{
     display: flex;
@@ -203,6 +207,9 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    flex-flow: row;
+    background: antiquewhite;
+    max-height: 20vh;
 }
 .footer-content h3{
     font-size: 2.1rem;
@@ -215,11 +222,11 @@ body {
     margin: 10px auto;
     line-height: 28px;
     font-size: 15px;
-    color: white;
+    color: black;
 }
 
 .footer-bottom{
-    background: #000;
+    background: antiquewhite;
     width: 100vw;
     /* padding: 20px; */
     padding-bottom: 40px;
@@ -232,7 +239,7 @@ body {
     text-transform: capitalize;
 }
 .footer-bottom p a{
-  color:white;
+  color:black;
   font-size: 16px;
   text-decoration: none;
 }
@@ -250,12 +257,12 @@ body {
   
 }
 .footer-menu ul li{
-padding-right: 10px;
+padding-right: 15px;
 display: block;
 
 }
 .footer-menu ul li a{
-  color: #cfd2d6;
+  color: black;
   text-decoration: none;
 }
 .footer-menu ul li a:hover{
@@ -269,7 +276,7 @@ display: block;
   margin-bottom: 20px;
 }
 }
-
+/*Hristo End*/
 
 
 
