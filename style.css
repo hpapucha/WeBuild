@@ -158,7 +158,146 @@ body {
     }
 }
 
+.feature1 {  
+  
+    width: 264px;
+    height: 70px;
+    background: rgba(203,203,203,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 646px;
+    overflow: hidden;  
+    border-radius: 25px;
+    
+  
+  }
 
+
+.feature3 {
+  width: 264px;
+      height: 70px;
+      background: rgba(203,203,203,1);
+      opacity: 1;
+      position: absolute;
+      top: 0px;
+      left: 1123px;
+      border-radius: 25px;
+      overflow: hidden;
+ 
+}
+
+.feature2 {
+  width: 264px;
+      height: 70px;
+      background: rgba(203,203,203,1);
+      opacity: 1;
+      position: absolute;
+      top: 0px;
+      left: 1600px;
+      border-radius: 25px;    
+      overflow: hidden;
+      
+}
+
+.features-main{
+    width: 100%;
+    height: 1078px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 600px;
+    left: 50x;
+    overflow: hidden;
+    float: left;
+    margin: 0;
+    font-family:outfit;
+    font-size: 24px;
+    font-family: bold;
+    text-align: center;
+}
+
+.feature1-mainbox {
+    width: 450px;
+    height: 900px;
+    background: rgba(194,180,169,1);
+    opacity: 1;
+    position: absolute;
+    top: 106px;
+    left: 553px;
+    border-radius: 25px;
+    text-align: center;
+    overflow: hidden;
+    font-family:outfit;
+    font-size: 20px;
+    line-height: 2em;
+    
+}
+.feature2-mainbox {
+      width: 450px;
+      height: 900px;
+      background: rgba(27,25,21,1);
+      opacity: 1;
+      position: absolute;
+      top: 106px;
+      left: 1030px;
+      border-radius: 25px;
+      overflow: hidden;
+      font-size: 20px;
+      line-height: 2em;
+      color: #C2B4A9;
+}
+.feature3-mainbox {
+      width: 450px;
+      height: 900px;
+      background: rgba(194,180,169,1);
+      opacity: 1;
+      position: absolute;
+      top: 106px;
+      left: 1507px;
+      border-radius: 25px;
+      overflow: hidden;
+      font-size: 20px;
+      line-height: 2em;
+      
+}
+.design {
+  width: 250px;
+  height: 60px;
+  background: rgba(65,66,70,1);
+  opacity: 1;
+  position: absolute;
+  top: 1018px;
+  left: 653px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.survey {
+  width: 250px;
+  height: 60px;
+  background: rgba(203,203,203,1);
+  opacity: 1;
+  position: absolute;
+  top: 1018px;
+  left: 1130px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.randomize {
+  width: 250px;
+  height: 60px;
+  background: rgba(65,66,70,1);
+  opacity: 1;
+  position: absolute;
+  top: 1018px;
+  left: 1607px;
+  border-radius: 25px;
+  overflow: hidden;
+}
 
 
   /* FOOTER CODE */
