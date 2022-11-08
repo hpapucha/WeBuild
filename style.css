@@ -263,7 +263,34 @@ body {
 
   
 
-
+.features-buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+     
+    }
+.buttons {
+  padding: 10px;
+  margin: 10px;
+  background: rgba(203,203,203,1);
+  border-radius: 25px;
+    
+   } 
+.destription {
+ 
+  text-align:center;
+  padding: 10px;
+  margin: 10px;
+  background: rgba(203,203,203,1);
+  border-radius: 25px;
+}
+.destription-vert {
+  display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 
 
   /* FOOTER CODE */
