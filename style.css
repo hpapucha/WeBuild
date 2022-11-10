@@ -1,3 +1,19 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  justify-items: stretch;
+  grid-template-areas:
+    'main-header'
+    'weBuild'
+    'feature-selection'
+    'information-product'
+    'footer'
+  
+}
+
 /* Pedro start of work */
 
 img {
@@ -19,6 +35,7 @@ img {
 }
 
 .container {
+  grid-area: main-header;
 	width: 960px;
 	max-width: 100%;
 	padding: 1px;
@@ -26,6 +43,7 @@ img {
 }
 
 .main-header .container {
+  
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -54,6 +72,7 @@ img {
 .main-header {
   background-color: #C2B4A9;
   border-radius: 25px;
+  max-height: 6em;
 }
 
 .WB-logo {
@@ -90,16 +109,6 @@ body {
     margin: 0;
     width: 80%;
   }
-}
-
-.wrapper {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-items: stretch;
-  justify-items: stretch;
-  
 }
 
   /* header{
@@ -171,7 +180,8 @@ body {
 /* This makes the text shrink when you resize the window bellow and above 800 px; */
 @media screen and (min-width: 801px) {
   .weBuild {
-    position: absolute;
+    grid-area: weBuild;
+    position: relative;
     width: 38.27vw;
     height: 14.87vh;
     left: 7em;
@@ -274,6 +284,7 @@ body {
   /*feature-selection*/
   
   .feature-selection .container {
+    grid-area: feature-selection;
     display: flex;
     padding: 30px;
     margin: 60px auto;
@@ -382,6 +393,9 @@ body {
     width: 180px;
 }
 
+.information-product {
+  grid-area: information-product;
+}
 
   /* FOOTER CODE */
   /*Hristo Start*/
@@ -394,8 +408,9 @@ body {
   }
   
   footer{
-    position: absolute;
-    bottom: 0;
+    grid-area: footer;
+    position: relative;
+    margin-bottom: 5px;
     left: 0;
     right: 0;
     height: 5vh;
