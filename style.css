@@ -1,16 +1,14 @@
 .wrapper {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 8em 50em 50em 10em 20em;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  justify-items: stretch;
-  justify-items: stretch;
   grid-template-areas:
     'main-header'
     'weBuild'
     'feature-selection'
     'information-product'
-    'footer'
+    'footer';
   
 }
 
@@ -72,7 +70,7 @@ img {
 .main-header {
   background-color: #C2B4A9;
   border-radius: 25px;
-  max-height: 6em;
+  max-height: 7em;
 }
 
 .WB-logo {
