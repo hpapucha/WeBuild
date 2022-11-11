@@ -4,10 +4,9 @@ function submitUserForm() {
         document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
         return false;
     }
-    else{
     document.getElementById("contactForm").action = "https://formsubmit.co/xristo_pm@yahoo.com";
     return true;
-    }
+
 }
  
 function verifyCaptcha(token) {
