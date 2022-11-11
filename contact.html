@@ -41,8 +41,8 @@
 
       <div class="form-container">
         <h1>Contact Form</h1>
-        
-        <form name="contactForm" action="https://formsubmit.co/xristo_pm@yahoo.com" method="post" onsubmit = "return validate();return submitUserForm();">
+        <!-- action="https://formsubmit.co/xristo_pm@yahoo.com" -->
+        <form name="contactForm" action="https://formsubmit.co/xristo_pm@yahoo.com" method="post" onsubmit = "return validate(); return submitUserForm();">
           <label for="name">* Name</label>                                                          
           <input type="text" id="name" name="name" placeholder="Your name" >
           <span class="errors"></span><br>
@@ -59,11 +59,12 @@
           <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
           <span class="errors"></span><br>
 
-          <div class="g-recaptcha" data-sitekey="6Lf7MfwiAAAAANEiZHJuK7eC_hV7ivv2U85OGvXQ" data-callback="verifyCaptcha"></div>
-        <div id="g-recaptcha-error"></div>
-      
-          <button type="submit" value="Submit">Submit</button>
-        </form>
+            <div class="g-recaptcha" data-sitekey="6Lf7MfwiAAAAANEiZHJuK7eC_hV7ivv2U85OGvXQ" data-callback="verifyCaptcha"></div>
+            <div id="g-recaptcha-error"></div>
+            
+          
+          <input type="submit" name="submit" value="Submit"></button>
+        </form>   
       </div>
 
     <footer class="footer">
