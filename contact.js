@@ -4,7 +4,9 @@ function submitUserForm() {
         document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
         return false;
     }
-    document.getElementById("contactForm").action = "https://formsubmit.co/xristo_pm@yahoo.com";
+    var x = document.getElementById("contactForm").action = "https://formsubmit.co/xristo_pm@yahoo.com";
+    document.getElementById("contactForm").innerHTML = x;
+    
     return true;
 
 }
