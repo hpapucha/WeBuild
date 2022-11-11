@@ -347,4 +347,55 @@
   [hidden] {
     display: none;
   }
+  .card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+  }
+  .hero-image {
+    background-color: #1B1915;
+    height: 50%;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    align-items: right;
+    border-radius: 25px;
+    margin-top: 5px
+  }
+  
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #C2B4A9;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+  .padding{
+    padding: 3px 3px;
+    border-radius: 25px;
+    background-color: #C2B4A9;
+    color: #000000;
+    max-width: 50%;
+  }
+  
   
