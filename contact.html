@@ -43,26 +43,21 @@
         <h1>Contact Form</h1>
         <!-- action="https://formsubmit.co/xristo_pm@yahoo.com" -->
         <form name="contactForm" method="post" onsubmit = "return submitUserForm();">
-          <label for="name">* Name</label>                                                          
+          <label for="name">Name</label>                                                          
           <input type="text" id="name" name="name" placeholder="Your name" >
-          <span class="errors"></span><br>
-      
-          <label for="email">* Email</label>
+ 
+          <label for="email">Email</label>
           <input type="text" placeholder="Email address" id="email" name="email" >
-          <span class="errors"></span><br>
-      
-          <label for="phone">* Phone</label>
-          <input type="text" placeholder="Phone number" id="phone" name="phone" >
-          <span class="errors"></span><br>
-          
-          <label for="subject">* Message</label>
-          <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
-          <span class="errors"></span><br>
 
+          <label for="phone">Phone</label>
+          <input type="text" placeholder="Phone number" id="phone" name="phone" >
+     
+          <label for="subject">Message</label>
+          <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+  
             <div class="g-recaptcha" data-sitekey="6Lf7MfwiAAAAANEiZHJuK7eC_hV7ivv2U85OGvXQ" data-callback="verifyCaptcha"></div>
             <div id="g-recaptcha-error"></div>
-            
-          
+                     
           <input type="submit" name="submit" value="Submit"></button>
         </form>   
       </div>
