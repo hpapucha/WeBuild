@@ -270,15 +270,6 @@ body {
     }
 }
 
-
-
-  .information-product .container1 {
-    display: flex;
-    flex-direction: row;
-    
-  }
-  
-
   /*feature-selection*/
   
   .feature-selection .container {
@@ -329,8 +320,13 @@ body {
   width: 160px;
 }
 
+.feature-btn:hover {
+  background-color: rgba(56, 56, 56, 0.73);
+  color: white;
+}
 
-/*feature1 and feature3*/
+
+/*feature1 and feature3 */
 .feature {
     background-color: rgba(194,180,169,1);
     margin: 20px;
@@ -367,6 +363,11 @@ body {
   cursor: pointer;
   width: 180px;
 }
+
+.design:hover {
+ background-color:rgba(255, 255, 255, 0.65); 
+ color: black;
+}
   
 
 .survey {
@@ -380,6 +381,11 @@ body {
     width: 180px;
 }
 
+.survey:hover{
+  background-color: rgba(56, 56, 56, 0.73);
+  color: white;
+}
+
 .randomize {
     padding: 12px 22px;
     background-color: rgba(56, 56, 56, 0.73);
@@ -389,6 +395,11 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     width: 180px;
+}
+
+.randomize:hover {
+  background-color:rgba(255, 255, 255, 0.65); 
+  color: black;
 }
 
 .information-product {
