@@ -348,3 +348,56 @@
     display: none;
   }
   
+
+  /** Oval Card **/
+
+  .banner_card {
+    background-color: #1B1915;
+    height: 200px;
+    width: 700px;
+    border-radius: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    color: #C2B4A9;
+    position: relative;
+  
+
+  }
+
+  .banner_card_left,.banner_card_right {
+    width: 50%;
+  }
+  .banner_card_left p{
+    font-size: 16px;
+  }
+  .banner_card_right img{
+    background: #C2B4A9;
+  
+  
+    
+  }
+  .banner_card_right_blub{
+    border-radius: 26%;
+    max-width: 110px;
+    position:absolute;
+    right: 15em;
+    transform: rotate(-13deg);
+  }
+  .banner_card_right_book{
+    border-radius:20% ;
+    max-width: 150px;
+    position:absolute;
+    top: 7em;
+    right: 3em;
+    transform: rotate(13deg);
+  }
+
+  .banner_card_left h3 {
+    font-size: 14px;
+    background: #C2B4A9;
+    color: #000000;
+    padding: 10px 10px;
+    border-radius: 30px;
+  }
