@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="normalize.css">
       <link rel="stylesheet" href="style.css">
       <script defer src="script.js"></script>
+      <script defer src="script1.js"></script>
 
     </head>
 
@@ -52,7 +53,26 @@
     <!-- GRID ROW 3 -->
 
       <section class="feature-selection">
-        
+
+        <h1>Overlay text on canvas image and save as base64</h1>
+<div class="page-wrap">
+  <div class="controls">
+    <input class="controls__input" type="file" id="imageLoader" name="imageLoader"/>
+    <label class="controls__label" for="name">First, choose an image.</label>
+    
+    <input class="controls__input" id="name" type="text" value=""/>
+    <input class="controls__input" id="name1" type="text" value=""/>
+    <label class="controls__label" for="name">Overlay Text</label>
+  </div>
+  <div id="canvas-wrap">
+     <canvas style="display:block" id="imageCanvas" width=400px height=400px>
+        <canvas id="canvasID"></canvas>
+    </canvas> 
+  </div>
+  
+</div>
+
+    
   </section>
         
 
