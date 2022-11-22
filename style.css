@@ -26,6 +26,12 @@ img {
   letter-spacing: 0.1em;
   color: #343534;
   text-decoration: none;
+  
+}
+
+a:hover {
+    color: yellow;
+  
 }
 .main-nav ul {
   margin: 0;
