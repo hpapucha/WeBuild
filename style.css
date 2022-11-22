@@ -93,7 +93,9 @@ body {
   width: 100%;
   min-height: 100vh;
   /* background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%); */
-  background: whitesmoke;
+  /* background: whitesmoke; */
+  background-image: url("assets/circles.webp");
+  background-repeat: repeat;
   font-family: 'Outfit', Roboto;
   }
   @media screen and (min-width: 801px){
