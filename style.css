@@ -534,9 +534,219 @@ display: block;
   margin-bottom: 20px;
 }
 }
+
+/********** Archana's Work ***********/
+/********** Banner card    ***********/
+
+
+.banner_card {
+  background-color: #1B1915;
+  height: 200px;
+  width: 700px;
+  border-radius: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  color: #C2B4A9;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.banner_card_left,.banner_card_right {
+  width: 50%;
+}
+.banner_card_left p{
+  font-size: 16px;
+}
+.banner_card_right img{
+  background: #C2B4A9;
+
+
+  
+}
+.banner_card_right_blub{
+  border-radius: 26%;
+  max-width: 110px;
+  position:absolute;
+  right: 15em;
+  transform: rotate(-13deg);
+}
+.banner_card_right_book{
+  border-radius:20% ;
+  max-width: 150px;
+  position:absolute;
+  top: 7em;
+  right: 3em;
+  transform: rotate(13deg);
+}
+
+.banner_card_left h3 {
+  font-size: 14px;
+  background: #C2B4A9;
+  color: #000000;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
+nav{
+  background-color: #C2B4A9;    ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.about__main_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  color: #fff;
+  height: 400px;
+}
+
+
+.logo{
+  height: 40px;
+  margin: 10px 20px;
+}
+
+.nav__list{
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav__list-items > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav__right-side{
+  margin-right: 20px;
+}
+
+.about__col-1 > h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  width: 300px;
+  margin-left: 30px;
+}
+
+.card_img{
+  width: 80%;
+  height: 80%;
+  border-radius: 50px;
+}
+
+.about__col-2, .about__col-3{
+  text-align: center;
+}
+
+               /* Register and Log in */
+.register__container {
+  padding: 20px;
+    width:500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    border:1px solid #ccc;
+    border-radius:10px;
+    background:white;
+-webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+-moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+}
+
+.register__header{
+  text-align: center;
+}
+
+.register__link{
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.register__link:hover{
+  color: #343534;
+}
+
+
+.logout__btn{
+  width: 20%;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+  background: aliceblue;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+input[type=phone] {
+  width: 81%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+/* Set a style for all buttons */
+ button {
+  background-color: #0eb7f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+	font-size:16px;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	border-radius:10px;
+}
+
+ button:hover {
+  opacity:1;
+}
+
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+
+/********************* Archana End ********************/
+
+
 /*Hristo End*/
 
-.page-wrap {
+/* .page-wrap {
   display: inline-block;
   margin: 2em auto;
 }
@@ -580,7 +790,7 @@ canvas {
 }
 #canvasID {
   z-index: 9999;
-}
+} */
 
 
 
