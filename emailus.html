@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <head>
+      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="contact.css">
+      <script defer src="contact.js"></script>
+
+    </head>
+
+    <body>
+
+      <div class="wrapper"> <!-- start of wrapper grid -->
+      <header class="main-header">
+        <div class="container">
+          <h1 class="WB-logo">
+            <img src="assets/WB.png" srcset="assets/WB.svg 1x, assets/WB.svg 2x" width="300" height="300" alt="Flexbox Demo">
+          </h1>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li>
+                <a href="contact.html">CONTACT US</a>
+              </li>
+              <li>
+                <a href="#">ABOUT</a>
+              </li>
+              <li>
+                <a href="#">DONATE</a>
+              </li>
+              <li>
+                <a href="#">LOG IN</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="form-container">
+        <h1>Contact Form</h1>
+        <form name="contactForm" action="https://formsubmit.co/xristo_pm@yahoo.com" method="post">
+          <label for="name">Name</label>                                                          
+          <input type="text" id="name" name="name" placeholder="Your name" >
+ 
+          <label for="email">Email</label>
+          <input type="text" placeholder="Email address" id="email" name="email" >
+
+          <label for="phone">Phone</label>
+          <input type="text" placeholder="Phone number" id="phone" name="phone" >
+     
+          <label for="subject">Message</label>
+          <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+                     
+          <input type="submit" name="submit" value="Submit"></button>
+        </form>   
+      </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <img src="assets/WB.svg" alt="logo" class="logoFooter">
+      <div>is a university business card creation project. Find the github link bellow!</div> 
+      </div>
+      <div class="footer-bottom">
+          <p>Copyright ©<a href="#">WeBuild</a>  </p>
+                  <div class="footer-menu">
+                    <ul class="f-menu">
+                      <li><a href="">Home</a></li>
+                      <li><a href="">About</a></li>
+                      <li><a href="">GitHub</a></li>
+                    </ul>
+                  </div>
+      </div>
+
+  </footer>
+   <!-- end of wrapper div-->
+    </body>
+</html>
+

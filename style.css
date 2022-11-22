@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+ }
+
 .wrapper {
   display: grid;
   grid-template-rows: 8em 50em 50em 10em 20em;
@@ -26,7 +30,13 @@ img {
   letter-spacing: 0.1em;
   color: #343534;
   text-decoration: none;
+  
 }
+
+a:hover {
+    color: yellow;
+}
+
 .main-nav ul {
   margin: 0;
   padding: 0;
@@ -69,7 +79,7 @@ img {
 
 .main-header {
   background-color: #C2B4A9;
-  border-radius: 25px;
+  border-radius: 10px;
   max-height: 7em;
 }
 
@@ -92,7 +102,10 @@ body {
   
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%);
+  /* background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%); */
+  /* background: whitesmoke; */
+  background-image: url("assets/circles.webp");
+  background-repeat: repeat;
   font-family: 'Outfit', Roboto;
   }
   @media screen and (min-width: 801px){
@@ -176,14 +189,19 @@ body {
 /* WEBUILD SPAN TREATED AS ONE BLOCK */
 /* If the screen size is 801px wide or more, set the font-size of <div> to 80px */
 /* This makes the text shrink when you resize the window bellow and above 800 px; */
+.weBuildBackground{
+  top: 3em;
+  text-align: center;
+}
+
 @media screen and (min-width: 801px) {
   .weBuild {
+    background: antiquewhite;
     grid-area: weBuild;
     position: relative;
-    width: 38.27vw;
-    height: 14.87vh;
-    left: 7em;
-    top: 3em;
+    width: 99vw;
+    height: 45vh;
+    top: 2em;
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 800;
@@ -219,8 +237,10 @@ body {
 /* SITE NAME WEBUILD CODE */
 @media screen and (max-width: 800px) {
 .siteName {
-  font-size: 50px;
-  letter-spacing: 0.2em;
+font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
 }
 }
 
@@ -251,33 +271,35 @@ body {
   .explore {
     position: absolute;
     left: 2em;
-    top: 5em;
+    top: 10em;
     margin-top: 3em;
     background: #F2C254;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
+    border-radius: 3px;
+	box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.07);
+	transition: width 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
   }
+  
   }
   @media screen and (min-width: 801px) {
     .explore {
       position: relative;
       text-align: center;
-      
-      
       background: #F2C254;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 25px;
+      /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 25px; */
+      box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.07);
+      transition: width 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+      
     }
 }
 
 
-
-  .information-product .container1 {
-    display: flex;
-    flex-direction: row;
-    
-  }
-  
+.explore:hover{
+  width:5em;
+  height: 1.2em;
+}
 
   /*feature-selection*/
   
@@ -288,6 +310,7 @@ body {
     margin: 60px auto;
     align-items: center;
 	  justify-content: space-around;
+    background: antiquewhite;
 	  
 }
 
@@ -329,8 +352,13 @@ body {
   width: 160px;
 }
 
+.feature-btn:hover {
+  background-color: rgba(56, 56, 56, 0.73);
+  color: white;
+}
 
-/*feature1 and feature3*/
+
+/*feature1 and feature3 */
 .feature {
     background-color: rgba(194,180,169,1);
     margin: 20px;
@@ -367,6 +395,11 @@ body {
   cursor: pointer;
   width: 180px;
 }
+
+.design:hover {
+ background-color:rgba(255, 255, 255, 0.65); 
+ color: black;
+}
   
 
 .survey {
@@ -380,6 +413,11 @@ body {
     width: 180px;
 }
 
+.survey:hover{
+  background-color: rgba(56, 56, 56, 0.73);
+  color: white;
+}
+
 .randomize {
     padding: 12px 22px;
     background-color: rgba(56, 56, 56, 0.73);
@@ -391,8 +429,14 @@ body {
     width: 180px;
 }
 
+.randomize:hover {
+  background-color:rgba(255, 255, 255, 0.65); 
+  color: black;
+}
+
 .information-product {
   grid-area: information-product;
+  background: antiquewhite;
 }
 
   /* FOOTER CODE */
@@ -422,7 +466,7 @@ body {
     flex-direction: column;
     text-align: center;
     flex-flow: row;
-    background: antiquewhite;
+    background: #C2B4A9;
     max-height: 20vh;
 }
 .footer-content h3{
@@ -440,7 +484,7 @@ body {
 }
 
 .footer-bottom{
-    background: antiquewhite;
+    background: #C2B4A9;
     width: 100vw;
     /* padding: 20px; */
     padding-bottom: 40px;
@@ -492,6 +536,51 @@ display: block;
 }
 /*Hristo End*/
 
+.page-wrap {
+  display: inline-block;
+  margin: 2em auto;
+}
+.controls {
+  &__input {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    font-size: 1em;
+    padding-bottom: .5em;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    outline: none;
+    color: #fff;
+  }
+  &__btn {
+    background: dodgerblue;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+  }
+  &__label {
+     display: block;
+    font-size: .8em;
+    padding-top: .3em;
+    margin-bottom: 2em;
+  }
+}
+canvas {
+  background-color: #eee;
+  // opacity: 0;
+  transition: opacity .3s;
+  &.show {
+    opacity: 1;
+  }
+}
+.canvas-wrap {
+  margin-top: 50px;
+  position: relative;
+}
+#canvasID {
+  z-index: 9999;
+}
 
 
 

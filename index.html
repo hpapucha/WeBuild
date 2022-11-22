@@ -48,12 +48,12 @@
       <header class="main-header">
         <div class="container">
           <h1 class="WB-logo">
-            <img src="assets/WB.png" srcset="assets/WB.svg 1x, assets/WB.svg 2x" width="300" height="300" alt="Flexbox Demo">
+            <a href="index.html"><img src="assets/WB.png" srcset="assets/WB.svg 1x, assets/WB.svg 2x" width="300" height="300" alt="Flexbox Demo"></a>
           </h1>
           <nav class="main-nav">
             <ul class="main-nav-list">
               <li>
-                <a href="#">CONTACT US</a>
+                <a href="contact.html">CONTACT US</a>
               </li>
               <li>
                 <a href="#">ABOUT</a>
@@ -62,7 +62,7 @@
                 <a href="#">DONATE</a>
               </li>
               <li>
-                <a href="#">LOG IN</a>
+                <a href="logIn.html">LOG IN</a>
               </li>
             </ul>
           </nav>
@@ -72,57 +72,58 @@
       <!-- Pedro work on html  -->
       
       <!-- GRID ROW 2 -->
-    <section class = "weBuild">
+  
+  <section class = "weBuild">
       
       <div class="siteName">WeBuild</div>
       <div class="slogan">WHERE YOU WILL FIND YOUR BUSSINESS CARD</div>
-      <button class="explore">EXPLORE</button>
-      </span>
-      
+      <button class="explore" onClick="document.getElementById('feature-selection').scrollIntoView();">EXPLORE</button>
+ 
+    
   </section>
 
     <!-- GRID ROW 3 -->
 
-      <section class="feature-selection">
+      <section class="feature-selection" id="feature-selection">
         <div class="container">
               <div class="col">
-                    <button class="feature-btn">Feature 1</button>
+                   <!--<button class="feature-btn">Feature 1</button> -->
                     <div class="feature"> <!--  feature1 and feature3  --> 
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore eius est
                                 facere fugit hic laborum, mollitia necessitatibus neque provident quisquam recusandae
                                 sapiente sed similique, sint ut voluptas voluptatibus? Labore!</p>
                     </div>
-                    <button class="design">DESIGN</button>
+                    <button class="design" onclick="document.location='design.html'">DESIGN</button>
                 </div>
 
 
                 <div class="col">
-                    <button class="feature-btn">Feature 2</button>
+                    <!--<button class="feature-btn">Feature 2</button> -->
                     <div class="feature-middle"> <!--feature2 -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore eius est
                                 facere fugit hic laborum, mollitia necessitatibus neque provident quisquam recusandae
                                 sapiente sed similique, sint ut voluptas voluptatibus? Labore!</p>
                     </div>
                 
-                    <button class="survey">START SURVEY</button>
+                    <button class="survey" onclick="document.location='survey.html'">START SURVEY</button>
                 </div>
 
 
                 <div class="col">
-                    <button class="feature-btn">Feature 3</button>
+                    <!--<button class="feature-btn">Feature 3</button> -->
                     <div class="feature"><!--  feature1 and feature3  --> 
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore eius est
                                 facere fugit hic laborum, mollitia necessitatibus neque provident quisquam recusandae
                                 sapiente sed similique, sint ut voluptas voluptatibus? Labore!</p>
                         
                     </div>
-                    <button class="randomize">RANDOMIZE</button>
+                    <button class="randomize" onclick="document.location='randomize.html'">RANDOMIZE</button>
                 </div>
             
         </div>
 
    </section>
-          
+        
 
 
     <!-- GRID ROW 4 -->    
