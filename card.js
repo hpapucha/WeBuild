@@ -34,7 +34,7 @@ $(document).ready(function(){
                 update = false;
                 context.drawImage(img, 0, 0);
 
-                context.fillStyle = "#F5F121";
+                context.fillStyle = "black";
                 context.font = "22px sans-serif";
 
                 context.fillText(name, 20, 50);

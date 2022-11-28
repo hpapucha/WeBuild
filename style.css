@@ -792,6 +792,39 @@ canvas {
   z-index: 9999;
 } */
 
+.wrapper{
+}
+.image-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-column{
+  width: 48%;
+  background: white;
+  display: flex;
+  margin: 8px;
+}
+.image-column > div{
+  width: 50%;
+  padding: 10px;
+}
+.image-column .image-wrapper{
+
+}
+.image-column .image-wrapper canvas{
+  max-width: 100%;
+}
+.inputs-wrapper{
+  padding: 10px;
+}
+label{
+  display: block;
+}
+input{
+  box-sizing: border-box;
+  width: 100%;
+}
+
 
 
 

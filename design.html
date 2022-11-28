@@ -6,9 +6,9 @@
     <head>
       <link rel="stylesheet" href="normalize.css">
       <link rel="stylesheet" href="style.css">
-      <script defer src="script.js"></script>
-      <script defer src="script1.js"></script>
-
+      
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+      <script src="card.js"></script>
     </head>
 
     <body>
@@ -45,32 +45,217 @@
       <!-- Pedro work on html  -->
       
       <!-- GRID ROW 2 -->
-    <section class = "weBuild">
-      
-      
-  </section>
 
     <!-- GRID ROW 3 -->
 
       <section class="feature-selection">
 
-        <h1>Overlay text on canvas image and save as base64</h1>
-<div class="page-wrap">
-  <div class="controls">
-    <input class="controls__input" type="file" id="imageLoader" name="imageLoader"/>
-    <label class="controls__label" for="name">First, choose an image.</label>
-    
-    <input class="controls__input" id="name" type="text" value=""/>
-    <input class="controls__input" id="name1" type="text" value=""/>
-    <label class="controls__label" for="name">Overlay Text</label>
-  </div>
-  <div id="canvas-wrap">
-     <canvas style="display:block" id="imageCanvas" width=400px height=400px>
-        <canvas id="canvasID"></canvas>
-    </canvas> 
-  </div>
-  
-</div>
+        <div class="wrapper">
+          <div class="image-row">
+            <div class="image-column">
+              <div class="image-wrapper">
+                <canvas data-image="assets/cards/placeholder.png" width="320" height="260"></canvas>
+              </div>
+              <div class="inputs-wrapper">
+                <div>
+                  <label>Your name</label>
+                  <input type="text" name="name" >
+                </div>
+                <div>
+                  <label>Business name</label>
+                  <input type="text" name="bname" >
+                </div>
+                <div>
+                  <label>Address</label>
+                  <input type="text" name="address">
+                </div>
+              </div>
+            </div>
+            <div class="image-column">
+              <div class="image-wrapper">
+                <canvas data-image="assets/cards/placeholder2.jpeg" width="320" height="260"></canvas>
+              </div>
+              <div class="inputs-wrapper">
+                <div>
+                  <label>Your name</label>
+                  <input type="text" name="name">
+                </div>
+                <div>
+                  <label>Business name</label>
+                  <input type="text" name="bname">
+                </div>
+                <div>
+                  <label>Address</label>
+                  <input type="text" name="address">
+                </div>
+              </div>
+            </div>
+      
+            <div class="image-column">
+              <div class="image-wrapper">
+                <canvas data-image="https://via.placeholder.com/320" width="320" height="320"></canvas>
+              </div>
+              <div class="inputs-wrapper">
+                <div>
+                  <label>Your name</label>
+                  <input type="text" name="name">
+                </div>
+                <div>
+                  <label>Business name</label>
+                  <input type="text" name="bname">
+                </div>
+                <div>
+                  <label>Address</label>
+                  <input type="text" name="address">
+                </div>
+              </div>
+            </div>
+      
+            <div class="image-column">
+              <div class="image-wrapper">
+                <canvas data-image="https://via.placeholder.com/320" width="320" height="320"></canvas>
+              </div>
+              <div class="inputs-wrapper">
+                <div>
+                  <label>Your name</label>
+                  <input type="text" name="name">
+                </div>
+                <div>
+                  <label>Business name</label>
+                  <input type="text" name="bname">
+                </div>
+                <div>
+                  <label>Address</label>
+                  <input type="text" name="address">
+                </div>
+              </div>
+            </div>
+
+            <div class="image-column">
+              <div class="image-wrapper">
+                <canvas data-image="https://via.placeholder.com/320" width="320" height="320"></canvas>
+              </div>
+              <div class="inputs-wrapper">
+                <div>
+                  <label>Your name</label>
+                  <input type="text" name="name">
+                </div>
+                <div>
+                  <label>Business name</label>
+                  <input type="text" name="bname">
+                </div>
+                <div>
+                  <label>Address</label>
+                  <input type="text" name="address">
+                </div>
+              </div>
+            </div>
+
+            <div class="image-column">
+              <div class="image-wrapper">
+                <canvas data-image="https://via.placeholder.com/320" width="320" height="320"></canvas>
+              </div>
+              <div class="inputs-wrapper">
+                <div>
+                  <label>Your name</label>
+                  <input type="text" name="name">
+                </div>
+                <div>
+                  <label>Business name</label>
+                  <input type="text" name="bname">
+                </div>
+                <div>
+                  <label>Address</label>
+                  <input type="text" name="address">
+                </div>
+              </div>
+            </div>
+
+            <div class="image-column">
+              <div class="image-wrapper">
+                <canvas data-image="https://via.placeholder.com/320" width="320" height="320"></canvas>
+              </div>
+              <div class="inputs-wrapper">
+                <div>
+                  <label>Your name</label>
+                  <input type="text" name="name">
+                </div>
+                <div>
+                  <label>Business name</label>
+                  <input type="text" name="bname">
+                </div>
+                <div>
+                  <label>Address</label>
+                  <input type="text" name="address">
+                </div>
+              </div>
+            </div>
+
+            <div class="image-column">
+              <div class="image-wrapper">
+                <canvas data-image="https://via.placeholder.com/320" width="320" height="320"></canvas>
+              </div>
+              <div class="inputs-wrapper">
+                <div>
+                  <label>Your name</label>
+                  <input type="text" name="name">
+                </div>
+                <div>
+                  <label>Business name</label>
+                  <input type="text" name="bname">
+                </div>
+                <div>
+                  <label>Address</label>
+                  <input type="text" name="address">
+                </div>
+              </div>
+            </div>
+
+            <div class="image-column">
+              <div class="image-wrapper">
+                <canvas data-image="https://via.placeholder.com/320" width="320" height="320"></canvas>
+              </div>
+              <div class="inputs-wrapper">
+                <div>
+                  <label>Your name</label>
+                  <input type="text" name="name">
+                </div>
+                <div>
+                  <label>Business name</label>
+                  <input type="text" name="bname">
+                </div>
+                <div>
+                  <label>Address</label>
+                  <input type="text" name="address">
+                </div>
+              </div>
+            </div>
+
+            <div class="image-column">
+              <div class="image-wrapper">
+                <canvas data-image="https://via.placeholder.com/320" width="320" height="260"></canvas>
+              </div>
+              <div class="inputs-wrapper">
+                <div>
+                  <label>Your name</label>
+                  <input type="text" name="name">
+                </div>
+                <div>
+                  <label>Business name</label>
+                  <input type="text" name="bname">
+                </div>
+                <div>
+                  <label>Address</label>
+                  <input type="text" name="address">
+                </div>
+              </div>
+            </div>
+
+            
+            
+          </div>
+        </div>
+        
 
     
   </section>
@@ -79,9 +264,7 @@
 
     <!-- GRID ROW 4 -->    
    <!--information_of_product-->  
-    <section class="information-product">
-     
-    </section>
+
     
     <!-- GRID ROW 5 -->
 
