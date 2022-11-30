@@ -266,6 +266,15 @@ font-family: 'Outfit';
       color: black;
     }
 }
+
+.designSlogan {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: black;
+  text-align: center;
+  
+  
+}
 /* EXPLORE BUTTON  */
 @media screen and (max-width: 800px) {
   .explore {
@@ -714,15 +723,15 @@ input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, sel
 
 
 
-/* Set a style for all buttons */
- button {
-  background-color: #0eb7f4;
+/* Set a style for download button */
+.cardDownload {
+  background-color: #C2B4A9;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 85%;
   opacity: 0.9;
 	font-size:16px;
 	font-family: Montserrat,Arial, Helvetica, sans-serif;
@@ -731,6 +740,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, sel
 
  button:hover {
   opacity:1;
+  color: yellow;
 }
 
 
@@ -823,6 +833,7 @@ label{
 input{
   box-sizing: border-box;
   width: 100%;
+  max-height: 10px;
 }
 
 

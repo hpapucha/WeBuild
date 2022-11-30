@@ -131,9 +131,9 @@
 
 	<script type="text/javascript">
 
-		$(document).ready(function(){
+		function testove(){
 			//initialise each canvas and fill with image
-			let canvas = $(".image-column").find("canvas").toArray();
+			let canvas = document.getElementsByClassName(".image-column").find("canvas").toArray();
 			canvas.forEach(c => {
 
 				var context = c.getContext("2d");
