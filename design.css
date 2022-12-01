@@ -4,14 +4,13 @@ html {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 8em 50em 50em 50em 20em;
+  grid-template-rows: 8em 50em 70em;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   grid-template-areas:
     'main-header'
-    'weBuild'
+    
     'feature-selection'
-    'information-product'
     'footer';
   
 }
