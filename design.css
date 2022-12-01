@@ -489,7 +489,7 @@
     
     footer{
       grid-area: footer;
-      position: relative;
+      position: absolute;
       top: 10em;
       margin-bottom: 5px;
       left: 0;

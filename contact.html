@@ -5,7 +5,7 @@
   
     <head>
       <link rel="stylesheet" href="normalize.css">
-      <link rel="stylesheet" href="style.css">
+      <!-- <link rel="stylesheet" href="style.css"> -->
       <link rel="stylesheet" href="contact.css">
       <script defer src="contact.js"></script>
       <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -18,7 +18,7 @@
       <header class="main-header">
         <div class="container">
           <h1 class="WB-logo">
-            <img src="assets/WB.png" srcset="assets/WB.svg 1x, assets/WB.svg 2x" width="300" height="300" alt="Flexbox Demo">
+            <a href="index.html"><img src="assets/WB.png" srcset="assets/WB.svg 1x, assets/WB.svg 2x" width="300" height="300" alt="Flexbox Demo"></a>
           </h1>
           <nav class="main-nav">
             <ul class="main-nav-list">
@@ -32,21 +32,28 @@
                 <a href="#">DONATE</a>
               </li>
               <li>
-                <a href="#">LOG IN</a>
+                <a href="logIn.html">LOG IN</a>
               </li>
             </ul>
           </nav>
         </div>
       </header>
 
+
       <div class="form-container">
-        <h1>Contact Form</h1>
+        <div class="contactUsTextWrapper">
+        <h3>Give us a</h2>
+        <h4>Shout</h4>
+        <p>166 N West St</p>
+        <p>Chicago, IL 60615</p>
+        <p>312-333-1111</p>
+      </div>
         <form name="contactForm" action="emailus.html" onclick = "return submitUserForm();">
-            <div class="g-recaptcha" data-sitekey="6Lf7MfwiAAAAANEiZHJuK7eC_hV7ivv2U85OGvXQ" data-callback="verifyCaptcha"></div>
-            <div id="g-recaptcha-error"></div>
-            
+            <!-- <div class="g-recaptcha" data-sitekey="6Lf7MfwiAAAAANEiZHJuK7eC_hV7ivv2U85OGvXQ" data-callback="verifyCaptcha"></div>
+            <div id="g-recaptcha-error"></div> -->
+            <form action="emailus.html">
                 <input type="submit" name="submit" value="Email Us" ></button>
-            
+            </form>
                     
           
         </form>   
