@@ -4,7 +4,7 @@ html {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 8em 50em 50em 50em 20em;
+  grid-template-rows: 8em 40em 40em 60em 10em;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   grid-template-areas:
