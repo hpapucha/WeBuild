@@ -1,429 +1,432 @@
-  .form-container {
-    width: 50%;
-    margin: auto;
-    padding: 2%;
-    border: 1px solid #f7f7f7;
-    background: antiquewhite;
+html {
+  scroll-behavior: smooth;
+ }
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 8em 50em 70em;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    'main-header'
     
-    text-align: center;
-  }
-  label {
-    display: block;
-    margin-top: 25px;
-    font-size: 1rem;
-  }
-  input, textarea {
-    width: 80%;
-    padding: 15px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-  }
-  button {
-    width: 82.5%;
-    height: 50px;
-    border-radius: 5px;
-    color: #fff;
-    background: red;
-    line-height: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border: 1px solid red;
-    margin-top: 25px;
-    transition: color .4s ease-out, background .4s ease-out;
-  }
-  button:hover {
-    color: red;
-    background: #fff;
-  }
-  .errors {
-    display: block;
-    color: red;
-    margin-top: 5px;
-  }
-  .error {
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -ms-transition: .2s;
-    -o-transition: .2s;
-    transition: .2s;
-    box-shadow: 0 0 15px 0 rgba(255,36,0,1);
-  }
-
-
-/* style.css code */
-
-
-  .wrapper {
-    display: grid;
-    grid-template-rows: 8em 10em 20em;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-areas:
-      'main-header'
-      'weBuild'
-      'feature-selection'
-      'information-product'
-      'footer';
-    
-  }
+    'feature-selection'
+    'footer';
   
-  /* Pedro start of work */
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .main-nav a {
-    font-size: 0.75em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #343534;
-    text-decoration: none;
-  }
-  .main-nav ul {
-    margin: 0;
-    padding: 0;
-  }
+}
 
-  a:hover {
+/* Pedro start of work */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.main-nav a {
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #343534;
+  text-decoration: none;
+  
+}
+
+a:hover {
     color: yellow;
 }
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  grid-area: main-header;
+	width: 960px;
+	max-width: 100%;
+	padding: 1px;
+	margin: 0 auto;
+}
+
+.main-header .container {
   
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+  
+
+}
+
+.main-nav ul {
+	margin: 1em 0 .5em;
+	text-align: center;
+}
+
+.main-nav li {
+	display: inline;
+}
+.main-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 15px;
+}
+
+.main-header {
+  background-color: #C2B4A9;
+  border-radius: 10px;
+  max-height: 7em;
+}
+
+.WB-logo {
+  margin: -100px 0px -110px 0px;
+  
+}
+
+
+@media (min-width: 960px) {
+	.main-header .container {
+		justify-content: space-between;
+	}
+}
+
+/* Pedro end of work */
+
+
+body {
+  
+  width: 100%;
+  min-height: 100vh;
+  /* background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%); */
+  /* background: whitesmoke; */
+  background-image: url("assets/circles.webp");
+  background-repeat: repeat;
+  font-family: 'Outfit', Roboto;
+  }
+  @media screen and (min-width: 801px){
   .container {
-    grid-area: main-header;
-    width: 960px;
-    max-width: 100%;
-    padding: 1px;
-    margin: 0 auto;
+    margin: 0;
+    width: 100%;
   }
-  
-  .main-header .container {
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
-  
+}
+
+@media screen and (max-width: 800px){
+  header div .container {
+    margin: 0;
+    width: 80%;
   }
+}
+
+  /* header{
+    min-height:5vh;
+    max-height: 5vh;
+    background: #C2B4A9;
+    border-radius: 20px;
+  } */
+
+  /* header ::after{
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+/* @media screen and (min-width: 801px){
+  .logo {
+    margin-left: -20px;
+    margin-top: -66px;
+    float: left;
+    width: 20vw;
+    height: 20vh;
+  }
+} */
+
+/* @media screen and (max-width: 800px){
+  .logo {
+    margin-left: -20px;
+    margin-top: -30px;
+    float: left;
+    width: 20vw;
+    height: 20vh;
+  }
+}
   
-  .main-nav ul {
-    margin: 1em 0 .5em;
+  nav {
     text-align: center;
   }
-  
-  .main-nav li {
-    display: inline;
+
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
-  .main-nav a {
+  @media screen and (min-width: 801px){
+  nav li {
     display: inline-block;
-    padding: .5em 1.5em;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 1000;
-    font-size: 15px;
+    margin: 0 50px;
+    padding-top: 0.5em;
   }
-  
-  .main-header {
-    background-color: #C2B4A9;
-    border-radius: 25px;
-    max-height: 7em;
   }
-  
-  .WB-logo {
-    margin: -100px 0px -110px 0px;
-    
-  }
-  
-  
-  @media (min-width: 960px) {
-    .main-header .container {
-      justify-content: space-between;
-    }
-  }
-  
-  /* Pedro end of work */
-  
-  
-  body {
-    
-    width: 100%;
-    min-height: 100vh;
-    /* background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%); */
-    font-family: sans-serif;
-    background-image: url("assets/circles.webp");
-    background-repeat: repeat;
-    font-family: 'Outfit', Roboto;
-    }
-    @media screen and (min-width: 801px){
-    .container {
-      margin: 0;
-      width: 100%;
-    }
-  }
-  
+
   @media screen and (max-width: 800px){
-    header div .container {
-      margin: 0;
-      width: 80%;
-    }
-  }
-  
-    /* header{
-      min-height:5vh;
-      max-height: 5vh;
-      background: #C2B4A9;
-      border-radius: 20px;
-    } */
-  
-    /* header ::after{
-      content: "";
-      display: table;
-      clear: both;
-    } */
-  
-  /* @media screen and (min-width: 801px){
-    .logo {
-      margin-left: -20px;
-      margin-top: -66px;
-      float: left;
-      width: 20vw;
-      height: 20vh;
-    }
-  } */
-  
-  /* @media screen and (max-width: 800px){
-    .logo {
-      margin-left: -20px;
-      margin-top: -30px;
-      float: left;
-      width: 20vw;
-      height: 20vh;
-    }
-  }
-    
-    nav {
-      text-align: center;
-    }
-  
-    nav ul{
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    @media screen and (min-width: 801px){
     nav li {
       display: inline-block;
       margin: 0 50px;
-      padding-top: 0.5em;
-    }
-    }
-  
-    @media screen and (max-width: 800px){
-      nav li {
-        display: inline-block;
-        margin: 0 50px;
-        padding-top: 0.1em;
-      }
-    }
-  
-    nav li a{ 
-      text-decoration: none;
-      color: black;
-      text-transform: uppercase;
-    } */
-  
-  /* WEBUILD SPAN TREATED AS ONE BLOCK */
-  /* If the screen size is 801px wide or more, set the font-size of <div> to 80px */
-  /* This makes the text shrink when you resize the window bellow and above 800 px; */
-  .weBuildBackground{
-    top: 3em;
-    text-align: center;
-  }
-  
-  @media screen and (min-width: 801px) {
-    .weBuild {
-      background: antiquewhite;
-      grid-area: weBuild;
-      position: relative;
-      width: 99vw;
-      height: 45vh;
-      top: 2em;
-      font-family: 'Outfit';
-      font-style: normal;
-      font-weight: 800;
-      font-size: 80px;
-      /* font-size: 100px; */
-      line-height: 126px;
-      /* identical to box height */
-      letter-spacing: 0.3em;
-      text-align: center;
-      
-      color: black;
-      }
-  }
-  
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 50px */
-  @media screen and (max-width: 800px) {
-    .weBuild {
-      position: absolute;
-      width: 38.27vw;
-      height: 14.87vh;
-      left: 4em;
-      top: 5em;
-      font-family: 'Outfit';
-      font-style: normal;
-      font-weight: 800;
-      line-height: 126px;
-      letter-spacing: 0.3em;
-      font-size: 50px;
-      
-      color: black;
-      }
-  }
-  /* SITE NAME WEBUILD CODE */
-  @media screen and (max-width: 800px) {
-  .siteName {
-  font-family: 'Outfit';
-      font-style: normal;
-      font-weight: 800;
-      font-size: 80px;
-  }
-  }
-  
-  @media screen and (min-width: 801px) {
-    .siteName {
-      font-size: 90px;
+      padding-top: 0.1em;
     }
   }
-  
-  /* SLOGAN "WHERE YOU BUILD YOUR BUSINES CARD CODE" */
-  @media screen and (max-width: 800px) {
-    .slogan {
-      font-size: 12px;
-      letter-spacing: 0.1em;
-      color: black;
-      
-    }
-    }
-    @media screen and (min-width: 801px) {
-      .slogan {
-        font-size: 20px;
-        letter-spacing: 0.2em;
-        color: black;
-      }
-  }
-  /* EXPLORE BUTTON  */
-  @media screen and (max-width: 800px) {
-    .explore {
-      position: absolute;
-      left: 2em;
-      top: 10em;
-      margin-top: 3em;
-      background: #F2C254;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 25px;
-    }
-    }
-    @media screen and (min-width: 801px) {
-      .explore {
-        position: relative;
-        text-align: center;
-        
-        
-        background: #F2C254;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 25px;
-      }
-  }
-  
-    /*feature-selection*/
-    
-    .feature-selection .container {
-      grid-area: feature-selection;
-      display: flex;
-      padding: 30px;
-      margin: 60px auto;
-      align-items: center;
-      justify-content: space-around;
-      background: antiquewhite;
-      
-  }
-  
-  /* @media only screen and (max-width: 801px) {
-      .feature-selection .container {
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          
-      }
-  
-     
+
+  nav li a{ 
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
   } */
+
+/* WEBUILD SPAN TREATED AS ONE BLOCK */
+/* If the screen size is 801px wide or more, set the font-size of <div> to 80px */
+/* This makes the text shrink when you resize the window bellow and above 800 px; */
+.weBuildBackground{
+  top: 3em;
+  text-align: center;
+}
+
+@media screen and (min-width: 801px) {
+  .weBuild {
+    background: antiquewhite;
+    grid-area: weBuild;
+    position: relative;
+    width: 99vw;
+    height: 45vh;
+    top: 2em;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    /* font-size: 100px; */
+    line-height: 126px;
+    /* identical to box height */
+    letter-spacing: 0.3em;
+    text-align: center;
+    
+    color: black;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 50px */
+@media screen and (max-width: 800px) {
+  .weBuild {
+    position: absolute;
+    width: 38.27vw;
+    height: 14.87vh;
+    left: 4em;
+    top: 5em;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 126px;
+    letter-spacing: 0.3em;
+    font-size: 50px;
+    
+    color: black;
+    }
+}
+/* SITE NAME WEBUILD CODE */
+@media screen and (max-width: 800px) {
+.siteName {
+font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+}
+}
+
+@media screen and (min-width: 801px) {
+  .siteName {
+    font-size: 90px;
+  }
+}
+
+/* SLOGAN "WHERE YOU BUILD YOUR BUSINES CARD CODE" */
+@media screen and (max-width: 800px) {
+  .slogan {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: black;
+    
+  }
+  }
+  @media screen and (min-width: 801px) {
+    .slogan {
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      color: black;
+    }
+}
+
+.designSlogan {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: black;
+  text-align: center;
   
-  .col {
-      width: 25%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      
+  
+}
+/* EXPLORE BUTTON  */
+@media screen and (max-width: 800px) {
+  .explore {
+    position: absolute;
+    left: 2em;
+    top: 10em;
+    margin-top: 3em;
+    background: #F2C254;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border-radius: 3px;
+	box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.07);
+	transition: width 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
   }
   
-  /* @media only screen and (max-width: 801px) {
-    .col {
-         width: 100%;
-         height: 1078px;
-       }
-   } */
+  }
+  @media screen and (min-width: 801px) {
+    .explore {
+      position: relative;
+      text-align: center;
+      background: #F2C254;
+      /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 25px; */
+      box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.07);
+      transition: width 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+      
+    }
+}
+
+
+.explore:hover{
+  width:5em;
+  height: 1.2em;
+}
+
+  /*feature-selection*/
   
-   .feature-btn {
+  .feature-selection .container {
+    grid-area: feature-selection;
+    display: flex;
+    padding: 30px;
+    margin: 60px auto;
+    align-items: center;
+	  justify-content: space-around;
+    background: antiquewhite;
+	  
+}
+
+/* @media only screen and (max-width: 801px) {
+    .feature-selection .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+   
+} */
+
+.col {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+/* @media only screen and (max-width: 801px) {
+  .col {
+       width: 100%;
+       height: 1078px;
+     }
+ } */
+
+ .feature-btn {
+  padding: 12px 22px;
+  background-color:rgba(255, 255, 255, 0.65);
+  border-radius: 25px;
+  border: none;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 160px;
+}
+
+.feature-btn:hover {
+  background-color: rgba(56, 56, 56, 0.73);
+  color: white;
+}
+
+
+/*feature1 and feature3 */
+.feature {
+    background-color: rgba(194,180,169,1);
+    margin: 20px;
+    border-radius: 25px;
+    padding: 40px;
+}
+ 
+.feature p {
+    font-weight: 600;
+    color: #161616;
+}
+
+/*feature2 */
+.feature-middle {
+    background-color: black;
+    padding: 40px;
+    border-radius: 25px;
+    margin: 20px;
+    }
+
+.feature-middle p {
+    font-weight: 600;
+    color: #C2B4A9;
+}
+
+
+.design {
+  padding: 12px 22px;
+  background-color: rgba(56, 56, 56, 0.73);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 180px;
+}
+
+.design:hover {
+ background-color:rgba(255, 255, 255, 0.65); 
+ color: black;
+}
+  
+
+.survey {
     padding: 12px 22px;
-    background-color:rgba(255, 255, 255, 0.65);
+    background-color: rgba(255, 255, 255, 0.65);
     border-radius: 25px;
     border: none;
     color: black;
     text-transform: uppercase;
     cursor: pointer;
-    width: 160px;
-  }
-  
-  .feature-btn:hover {
-    background-color: rgba(56, 56, 56, 0.73);
-    color: white;
-  }
-  
-  
-  /*feature1 and feature3 */
-  .feature {
-      background-color: rgba(194,180,169,1);
-      margin: 20px;
-      border-radius: 25px;
-      padding: 40px;
-  }
-   
-  .feature p {
-      font-weight: 600;
-      color: #161616;
-  }
-  
-  /*feature2 */
-  .feature-middle {
-      background-color: black;
-      padding: 40px;
-      border-radius: 25px;
-      margin: 20px;
-      }
-  
-  .feature-middle p {
-      font-weight: 600;
-      color: #C2B4A9;
-  }
-  
-  
-  .design {
+    width: 180px;
+}
+
+.survey:hover{
+  background-color: rgba(56, 56, 56, 0.73);
+  color: white;
+}
+
+.randomize {
     padding: 12px 22px;
     background-color: rgba(56, 56, 56, 0.73);
     border-radius: 25px;
@@ -432,198 +435,408 @@
     text-transform: uppercase;
     cursor: pointer;
     width: 180px;
+}
+
+.randomize:hover {
+  background-color:rgba(255, 255, 255, 0.65); 
+  color: black;
+}
+
+.information-product {
+  grid-area: information-product;
+  background: antiquewhite;
+}
+
+  /* FOOTER CODE */
+  /*Hristo Start*/
+
+  .logoFooter {
+    margin: 1em 0 0.5em;
+    float: left;
+    width: 10em;
+    height: 10em;
   }
   
-  .design:hover {
-   background-color:rgba(255, 255, 255, 0.65); 
-   color: black;
-  }
-    
-  
-  .survey {
-      padding: 12px 22px;
-      background-color: rgba(255, 255, 255, 0.65);
-      border-radius: 25px;
-      border: none;
-      color: black;
-      text-transform: uppercase;
-      cursor: pointer;
-      width: 180px;
-  }
-  
-  .survey:hover{
-    background-color: rgba(56, 56, 56, 0.73);
-    color: white;
-  }
-  
-  .randomize {
-      padding: 12px 22px;
-      background-color: rgba(56, 56, 56, 0.73);
-      border-radius: 25px;
-      border: none;
-      color: white;
-      text-transform: uppercase;
-      cursor: pointer;
-      width: 180px;
-  }
-  
-  .randomize:hover {
-    background-color:rgba(255, 255, 255, 0.65); 
-    color: black;
-  }
-  
-  .information-product {
-    grid-area: information-product;
-    background: antiquewhite;
-  }
-  
-    /* FOOTER CODE */
-    /*Hristo Start*/
-  
-    .logoFooter {
-      margin: 1em 0 0.5em;
-      float: left;
-      width: 10em;
-      height: 10em;
-    }
-    
-    footer{
-      grid-area: footer;
-      position: absolute;
-      top: 10em;
-      margin-bottom: 5px;
-      left: 0;
-      right: 0;
-      height: 5vh;
-      width: 100vw;
-      color: black;
-  }
-  .footer-content{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      flex-flow: row;
-      background: #C2B4A9;
-      max-height: 20vh;
-  }
-  .footer-content h3{
-      font-size: 2.1rem;
-      font-weight: 500;
-      text-transform: capitalize;
-      line-height: 1rem;
-  }
-  .footer-content p{
-      max-width: 500px;
-      margin: 10px auto;
-      line-height: 28px;
-      font-size: 15px;
-      color: black;
-  }
-  
-  .footer-bottom{
-      background: #C2B4A9;
-      width: 100vw;
-      /* padding: 20px; */
-      padding-bottom: 40px;
-      text-align: center;
-  }
-  .footer-bottom p{
-      float: left;
-      font-size: 14px;
-      word-spacing: 2px;
-      text-transform: capitalize;
-  }
-  .footer-bottom p a{
-    color:black;
-    font-size: 16px;
-    text-decoration: none;
-  }
-  .footer-bottom span{
-      text-transform: uppercase;
-      opacity: .4;
-      font-weight: 200;
-  }
-  .footer-menu{
-    float: right;
-  
-  }
-  .footer-menu ul{
-    display: flex;
-    
-  }
-  .footer-menu ul li{
-  padding-right: 15px;
-  display: block;
-  
-  }
-  .footer-menu ul li a{
-    color: black;
-    text-decoration: none;
-  }
-  .footer-menu ul li a:hover{
-    color: yellow;
-  }
-        
-  @media (max-width:500px) {
-  .footer-menu ul{
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  }
-  /*Hristo End*/
-  
-  .page-wrap {
-    display: inline-block;
-    margin: 2em auto;
-  }
-  .controls {
-    &__input {
-      display: block;
-      margin: 0 auto;
-      background: none;
-      border: none;
-      font-size: 1em;
-      padding-bottom: .5em;
-      border-bottom: 2px solid #ccc;
-      text-align: center;
-      outline: none;
-      color: #fff;
-    }
-    &__btn {
-      background: dodgerblue;
-      color: #fff;
-      border: none;
-      font-size: 1em;
-    }
-    &__label {
-       display: block;
-      font-size: .8em;
-      padding-top: .3em;
-      margin-bottom: 2em;
-    }
-  }
-  canvas {
-    background-color: #eee;
-    // opacity: 0;
-    transition: opacity .3s;
-    &.show {
-      opacity: 1;
-    }
-  }
-  .canvas-wrap {
-    margin-top: 50px;
+  footer{
+    grid-area: footer;
     position: relative;
+    margin-bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 5vh;
+    width: 100vw;
+    color: black;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-flow: row;
+    background: #C2B4A9;
+    max-height: 20vh;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 15px;
+    color: black;
+}
+
+.footer-bottom{
+    background: #C2B4A9;
+    width: 100vw;
+    /* padding: 20px; */
+    padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:black;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+  
+}
+.footer-menu ul li{
+padding-right: 15px;
+display: block;
+
+}
+.footer-menu ul li a{
+  color: black;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: yellow;
+}
+      
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+
+/********** Archana's Work ***********/
+/********** Banner card    ***********/
+
+
+.banner_card {
+  background-color: #1B1915;
+  height: 200px;
+  width: 700px;
+  border-radius: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  color: #C2B4A9;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.banner_card_left,.banner_card_right {
+  width: 50%;
+}
+.banner_card_left p{
+  font-size: 16px;
+}
+.banner_card_right img{
+  background: #C2B4A9;
+
+
+  
+}
+.banner_card_right_blub{
+  border-radius: 26%;
+  max-width: 110px;
+  position:absolute;
+  right: 15em;
+  transform: rotate(-13deg);
+}
+.banner_card_right_book{
+  border-radius:20% ;
+  max-width: 150px;
+  position:absolute;
+  top: 7em;
+  right: 3em;
+  transform: rotate(13deg);
+}
+
+.banner_card_left h3 {
+  font-size: 14px;
+  background: #C2B4A9;
+  color: #000000;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
+nav{
+  background-color: #C2B4A9;    ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.about__main_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  color: #fff;
+  height: 400px;
+}
+
+
+.logo{
+  height: 40px;
+  margin: 10px 20px;
+}
+
+.nav__list{
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav__list-items > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav__right-side{
+  margin-right: 20px;
+}
+
+.about__col-1 > h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  width: 300px;
+  margin-left: 30px;
+}
+
+.card_img{
+  width: 80%;
+  height: 80%;
+  border-radius: 50px;
+}
+
+.about__col-2, .about__col-3{
+  text-align: center;
+}
+
+               /* Register and Log in */
+.register__container {
+  padding: 20px;
+    width:500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    border:1px solid #ccc;
+    border-radius:10px;
+    background:white;
+-webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+-moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+}
+
+.register__header{
+  text-align: center;
+}
+
+.register__link{
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.register__link:hover{
+  color: #343534;
+}
+
+
+.logout__btn{
+  width: 20%;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+  background: aliceblue;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+input[type=phone] {
+  width: 81%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+/* Set a style for download button */
+.cardDownload {
+  background-color: #C2B4A9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 85%;
+  opacity: 0.9;
+	font-size:16px;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	border-radius:10px;
+}
+
+ button:hover {
+  opacity:1;
+  color: yellow;
+}
+
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
   }
-  #canvasID {
-    z-index: 9999;
+}
+
+/********************* Archana End ********************/
+
+
+/*Hristo End*/
+
+/* .page-wrap {
+  display: inline-block;
+  margin: 2em auto;
+}
+.controls {
+  &__input {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    font-size: 1em;
+    padding-bottom: .5em;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    outline: none;
+    color: #fff;
   }
-  
-  
-  
-  
-   
-  
-  
+  &__btn {
+    background: dodgerblue;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+  }
+  &__label {
+     display: block;
+    font-size: .8em;
+    padding-top: .3em;
+    margin-bottom: 2em;
+  }
+}
+canvas {
+  background-color: #eee;
+  // opacity: 0;
+  transition: opacity .3s;
+  &.show {
+    opacity: 1;
+  }
+}
+.canvas-wrap {
+  margin-top: 50px;
+  position: relative;
+}
+#canvasID {
+  z-index: 9999;
+} */
+
+.wrapper{
+}
+.image-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-column{
+  width: 48%;
+  background: white;
+  display: flex;
+  margin: 8px;
+}
+.image-column > div{
+  width: 50%;
+  padding: 10px;
+}
+.image-column .image-wrapper{
+
+}
+.image-column .image-wrapper canvas{
+  max-width: 100%;
+}
+.inputs-wrapper{
+  padding: 10px;
+}
+label{
+  display: block;
+}
+input{
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 10px;
+}
+
+
+
+
+ 
+
