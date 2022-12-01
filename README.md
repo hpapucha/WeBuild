@@ -22,3 +22,10 @@ For example it is generating class (a123) for a button, we have the change that 
 also when you are coding something use the dev branch instead of main branch
 Always do a git pull before starting to work on something so you get the new version
 or you will have issues with the versions
+
+TODO UNTIL NEXT CLASS:
+Pedro: navbar/design
+Hristo: Middle text/button/github versioning/read md, begin footer
+Elena: Information of Product or Feature Section pick one ( see figma design)
+Archana: Information of Product or Feature Section pick one ( see figma design)
+
