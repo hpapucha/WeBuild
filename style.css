@@ -216,7 +216,7 @@ font-family: 'Outfit';
     left: 2em;
     top: 10em;
     margin-top: 3em;
-    background: #F2C254;
+    background: #e8c77c;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     border-radius: 3px;
@@ -229,7 +229,7 @@ font-family: 'Outfit';
     .explore {
       position: relative;
       text-align: center;
-      background: #F2C254;
+      background: #e8c77c;
       /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 25px; */
       box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.07);
@@ -238,10 +238,9 @@ font-family: 'Outfit';
     }
 }
 
-
 .explore:hover{
   width:5em;
-  height: 1.2em;
+  height: 1.4em;
 }
 
   /*feature-selection*/

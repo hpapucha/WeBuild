@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <head>
+      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="upload.css">
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+      <div class="wrapper"> <!-- start of wrapper grid -->
+
+      <!-- Pedro work on html  -->
+
+      <!-- GRID ROW 1  -->
+      <header class="main-header">
+        <div class="container">
+          <h1 class="WB-logo">
+            <a href="index.html"><img src="assets/WB.png" srcset="assets/WB.svg 1x, assets/WB.svg 2x" width="300" height="300" alt="Flexbox Demo"></a>
+          </h1>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li>
+                <a href="contact.html">CONTACT US</a>
+              </li>
+              <li>
+                <a href="./aboutus.html">ABOUT</a>
+              </li>
+              
+              <li>
+                <a href="./login_new.html">LOG IN</a>
+              </li>
+            </ul>
+         
+          </nav>
+        </div>
+      </header>
+
+      <!-- GRID ROW 2 -->
+
+    <!-- GRID ROW 3 -->
+
+      <section class="feature-selection">
+        <div class="page">
+            <div class="image-wrapper">
+                <canvas id="canvas" width="400" height="280"></canvas>
+            </div>
+    
+            <div class="inputs-wrapper">
+                <div>
+                    <label>Upload Image</label>
+                    <input type="file" type="image" name="image" 
+                    onchange="readURL(this);">
+                </div>
+                <div class="input">
+                    <label>Your name</label>
+                    <input type="text" name="name" >
+                </div>
+                <div class="input">
+                    <label>Business name</label>
+                    <input type="text" name="bname" >
+                </div>
+                <div class="input">
+                    <label>Address</label>
+                    <input type="text" name="address">
+                </div>
+                <div class="input">
+                    <label>Phone</label>
+                    <input type="text" name="phone">
+                </div>
+                <div class="input">
+                    <button type="button" class="cardDownload">Download</button> 
+                </div>
+                
+            </div>
+        </div>
+    
+        
+
+    
+  </section>
+        
+
+
+    <!-- GRID ROW 4 -->    
+   <!--information_of_product-->  
+
+    
+    <!-- GRID ROW 5 -->
+
+    <footer class="footer">
+      <div class="footer-content">
+        <img src="assets/WB.svg" alt="logo" class="logoFooter">
+      <div>is a university business card creation project. Find the github link bellow!</div> 
+      </div>
+      <div class="footer-bottom">
+          <p>Copyright ©<a href="#">WeBuild</a>  </p>
+                  <div class="footer-menu">
+                    <ul class="f-menu">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="aboutus.html">About</a></li>
+                      <li><a href="https://github.com/hpapucha/WeBuild">GitHub</a></li>
+                    </ul>
+                  </div>
+      </div>
+
+  </footer>
+
+
+   <!-- end of wrapper div-->
+    </body>
+
+    <script type="text/javascript">
+
+
+		let uploadedImageData;
+		$(".input").hide()
+
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.readAsDataURL(input.files[0]);
+
+				reader.onload = function (e) {
+					let canvas = $("#canvas").get(0);
+					var context = canvas.getContext("2d");
+					var img = new Image();
+					img.src = e.target.result;
+					img.onload = function () {
+						uploadedImageData = img;
+						context.drawImage(img, 0, 0, canvas.width, canvas.height);
+						$(".input").show()
+					};
+				};
+			}
+		}
+
+		function showInputs(){
+			$(".input").hide()
+		}
+
+		$("input[type=text]").keyup(function(){
+				let itsCanvas = $("#canvas").get(0);
+				let name = $("input[name='name']")[0].value
+				let baname = $("input[name='bname']")[0].value
+				let addr = $("input[name='address']")[0].value
+                let phone = $("input[name='phone']")[0].value
+
+				var context = itsCanvas.getContext("2d");
+				console.log("redrawing canvas")
+				context.clearRect(0, 0, itsCanvas.width, itsCanvas.height);
+				var update = true;
+				requestAnimationFrame(renderFunction);
+
+				function renderFunction(){
+					if(update){
+						update = false;
+						if (uploadedImageData) {
+							context.drawImage(uploadedImageData, 0, 0, itsCanvas.width, itsCanvas.height);
+						}
+
+
+                        context.fillStyle = "#28282B";
+                        context.font = "20px imperial";
+
+						context.fillText(name, 20, 50);
+						context.fillText(baname, 20, 100);
+						context.fillText(addr, 20, 150);
+                        context.fillText(phone, 20, 200);
+
+					}
+					requestAnimationFrame(renderFunction);
+				}
+			})
+
+	</script>
+</html>
+

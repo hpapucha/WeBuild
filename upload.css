@@ -1,68 +1,15 @@
-  .form-container {
-    width: 50%;
-    margin: auto;
-    padding: 2%;
-    border: 1px solid #f7f7f7;
-    background: antiquewhite;
-    
-    text-align: center;
-  }
-  label {
-    display: block;
-    margin-top: 25px;
-    font-size: 1rem;
-  }
-  input, textarea {
-    width: 80%;
-    padding: 15px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-  }
-  button {
-    width: 82.5%;
-    height: 50px;
-    border-radius: 5px;
-    color: #fff;
-    background: red;
-    line-height: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border: 1px solid red;
-    margin-top: 25px;
-    transition: color .4s ease-out, background .4s ease-out;
-  }
-  button:hover {
-    color: red;
-    background: #fff;
-  }
-  .errors {
-    display: block;
-    color: red;
-    margin-top: 5px;
-  }
-  .error {
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -ms-transition: .2s;
-    -o-transition: .2s;
-    transition: .2s;
-    box-shadow: 0 0 15px 0 rgba(255,36,0,1);
-  }
-
-
-/* style.css code */
-
-
+html {
+    scroll-behavior: smooth;
+   }
+  
   .wrapper {
     display: grid;
-    grid-template-rows: 8em 10em 20em;
+    grid-template-rows: 8em 70em;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     grid-template-areas:
       'main-header'
-      'weBuild'
       'feature-selection'
-      'information-product'
       'footer';
     
   }
@@ -70,8 +17,8 @@
   /* Pedro start of work */
   
   img {
-    max-width: 100%;
-    height: auto;
+      max-width: 100%;
+      height: auto;
   }
   
   .main-nav a {
@@ -81,49 +28,47 @@
     letter-spacing: 0.1em;
     color: #343534;
     text-decoration: none;
+    
   }
+  
+  a:hover {
+      color: yellow;
+  }
+  
   .main-nav ul {
     margin: 0;
     padding: 0;
   }
-
-  a:hover {
-    color: yellow;
-}
   
   .container {
     grid-area: main-header;
-    width: 960px;
-    max-width: 100%;
-    padding: 1px;
-    margin: 0 auto;
-  }
-
-  .g-recaptcha-error{
-    text-align: center;
+      width: 960px;
+      max-width: 100%;
+      padding: 1px;
+      margin: 0 auto;
   }
   
   .main-header .container {
     
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
     
   
   }
   
   .main-nav ul {
-    margin: 1em 0 .5em;
-    text-align: center;
+      margin: 1em 0 .5em;
+      text-align: center;
   }
   
   .main-nav li {
-    display: inline;
+      display: inline;
   }
   .main-nav a {
-    display: inline-block;
-    padding: .5em 1.5em;
+      display: inline-block;
+      padding: .5em 1.5em;
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 1000;
@@ -132,7 +77,7 @@
   
   .main-header {
     background-color: #C2B4A9;
-    border-radius: 25px;
+    border-radius: 10px;
     max-height: 7em;
   }
   
@@ -143,9 +88,9 @@
   
   
   @media (min-width: 960px) {
-    .main-header .container {
-      justify-content: space-between;
-    }
+      .main-header .container {
+          justify-content: space-between;
+      }
   }
   
   /* Pedro end of work */
@@ -156,7 +101,7 @@
     width: 100%;
     min-height: 100vh;
     /* background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%); */
-    font-family: sans-serif;
+    /* background: whitesmoke; */
     background-image: url("assets/circles.webp");
     background-repeat: repeat;
     font-family: 'Outfit', Roboto;
@@ -319,6 +264,15 @@
         color: black;
       }
   }
+  
+  .designSlogan {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: black;
+    text-align: center;
+    
+    
+  }
   /* EXPLORE BUTTON  */
   @media screen and (max-width: 800px) {
     .explore {
@@ -329,18 +283,29 @@
       background: #F2C254;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 25px;
+      border-radius: 3px;
+      box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.07);
+      transition: width 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
     }
+    
     }
     @media screen and (min-width: 801px) {
       .explore {
         position: relative;
         text-align: center;
-        
-        
         background: #F2C254;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 25px;
+        /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px; */
+        box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.07);
+        transition: width 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+        
       }
+  }
+  
+  
+  .explore:hover{
+    width:5em;
+    height: 1.2em;
   }
   
     /*feature-selection*/
@@ -351,9 +316,9 @@
       padding: 30px;
       margin: 60px auto;
       align-items: center;
-      justify-content: space-around;
+        justify-content: space-around;
       background: antiquewhite;
-      
+        
   }
   
   /* @media only screen and (max-width: 801px) {
@@ -494,7 +459,6 @@
     footer{
       grid-area: footer;
       position: relative;
-      top: 10em;
       margin-bottom: 5px;
       left: 0;
       right: 0;
@@ -577,54 +541,250 @@
     margin-bottom: 20px;
   }
   }
-  /*Hristo End*/
   
-  .page-wrap {
-    display: inline-block;
-    margin: 2em auto;
-  }
-  .controls {
-    &__input {
-      display: block;
-      margin: 0 auto;
-      background: none;
-      border: none;
-      font-size: 1em;
-      padding-bottom: .5em;
-      border-bottom: 2px solid #ccc;
-      text-align: center;
-      outline: none;
-      color: #fff;
-    }
-    &__btn {
-      background: dodgerblue;
-      color: #fff;
-      border: none;
-      font-size: 1em;
-    }
-    &__label {
-       display: block;
-      font-size: .8em;
-      padding-top: .3em;
-      margin-bottom: 2em;
-    }
-  }
-  canvas {
-    background-color: #eee;
-    opacity: 0;
-    transition: opacity .3s;
-    &.show {
-      opacity: 1;
-    }
-  }
-  .canvas-wrap {
-    margin-top: 50px;
+  /********** Archana's Work ***********/
+  /********** Banner card    ***********/
+  
+  
+  .banner_card {
+    background-color: #1B1915;
+    height: 200px;
+    width: 700px;
+    border-radius: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    color: #C2B4A9;
     position: relative;
-  }
-  #canvasID {
-    z-index: 9999;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
+  .banner_card_left,.banner_card_right {
+    width: 50%;
+  }
+  .banner_card_left p{
+    font-size: 16px;
+  }
+  .banner_card_right img{
+    background: #C2B4A9;
+  
+  
+    
+  }
+  .banner_card_right_blub{
+    border-radius: 26%;
+    max-width: 110px;
+    position:absolute;
+    right: 15em;
+    transform: rotate(-13deg);
+  }
+  .banner_card_right_book{
+    border-radius:20% ;
+    max-width: 150px;
+    position:absolute;
+    top: 7em;
+    right: 3em;
+    transform: rotate(13deg);
+  }
+  
+  .banner_card_left h3 {
+    font-size: 14px;
+    background: #C2B4A9;
+    color: #000000;
+    padding: 10px 10px;
+    border-radius: 30px;
+  }
+  
+  nav{
+    background-color: #C2B4A9;    ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .about__main_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    height: 400px;
+  }
+  
+  
+  .logo{
+    height: 40px;
+    margin: 10px 20px;
+  }
+  
+  .nav__list{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav__list-items > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .nav__right-side{
+    margin-right: 20px;
+  }
+  
+  .about__col-1 > h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 300px;
+    margin-left: 30px;
+  }
+  
+  .card_img{
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+  }
+  
+  .about__col-2, .about__col-3{
+    text-align: center;
+  }
+  
+                 /* Register and Log in */
+  .register__container {
+    padding: 20px;
+      width:500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+      border:1px solid #ccc;
+      border-radius:10px;
+      background:white;
+  -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  }
+  
+  .register__header{
+    text-align: center;
+  }
+  
+  .register__link{
+    color: dodgerblue;
+    text-decoration: none;
+  }
+  
+  .register__link:hover{
+    color: #343534;
+  }
+  
+  
+  .logout__btn{
+    width: 20%;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+    background: aliceblue;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f7f7f7;
+      font-family: Montserrat,Arial, Helvetica, sans-serif;
+  }
+  
+  input[type=phone] {
+    width: 81%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f7f7f7;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  
+  
+  
+  /* Set a style for download button */
+  .cardDownload {
+    background-color: #C2B4A9;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+      font-size:16px;
+      font-family: Montserrat,Arial, Helvetica, sans-serif;
+      border-radius:10px;
+  }
+  
+   button:hover {
+    opacity:1;
+    color: yellow;
+  }
+  
+  
+  .page{
+    max-width: 420px;
+    margin: auto;
+}
+.image-wrapper{
+    background: #cacaca;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 280px;
+    width: 400px;
+    margin: auto;
+}
+.inputs-wrapper{
+    margin-top: 30px;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.inputs-wrapper > div{
+    background: white;
+    padding: 6px;
+    margin-bottom: 20px;
+    border: 2px solid #f0f0f0;
+    border-radius: 8px;
+}
+label{
+    display: block;
+    color: grey;
+    font-family: Arial;
+    font-size: 13px;
+}
+input{
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #c4c4c4; 
+    padding: 4px;
+}
+#canvas{
+    background: white;
+    border-radius: 10px;
+}
   
   
   
