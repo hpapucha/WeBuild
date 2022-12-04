@@ -9,7 +9,7 @@ html {
   grid-row-gap: 20px;
   grid-template-areas:
     'main-header'
-    
+    'WeBuild'
     'feature-selection'
     'footer';
   
