@@ -98,6 +98,10 @@
     padding: 1px;
     margin: 0 auto;
   }
+
+  .g-recaptcha-error{
+    text-align: center;
+  }
   
   .main-header .container {
     
