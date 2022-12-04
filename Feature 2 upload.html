@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		body{
+			background: #1d2526;
+		}
+		.page{
+			max-width: 420px;
+			margin: auto;
+		}
+		.image-wrapper{
+			background: #cacaca;
+			padding: 10px;
+			border-radius: 10px;
+			margin-bottom: 10px;
+			height: 280px;
+			width: 400px;
+			margin: auto;
+		}
+		.inputs-wrapper{
+			margin-top: 30px;
+			background: #fafafa;
+			padding: 20px;
+			border-radius: 10px;
+			margin-bottom: 10px;
+		}
+		.inputs-wrapper > div{
+			background: white;
+			padding: 6px;
+			margin-bottom: 20px;
+			border: 2px solid #f0f0f0;
+			border-radius: 8px;
+		}
+		label{
+			display: block;
+			color: grey;
+			font-family: Arial;
+			font-size: 13px;
+		}
+		input{
+			box-sizing: border-box;
+			width: 100%;
+			border: 1px solid #c4c4c4; 
+			padding: 4px;
+		}
+		#canvas{
+			background: white;
+			border-radius: 10px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="page">
+		<div class="image-wrapper">
+			<canvas id="canvas" width="400" height="280"></canvas>
+		</div>
+
+		<div class="inputs-wrapper">
+			<div>
+				<label>Upload Image</label>
+				<input type="file" type="image" name="image" 
+				onchange="readURL(this);">
+			</div>
+			<div class="input">
+				<label>Your name</label>
+				<input type="text" name="name" >
+			</div>
+			<div class="input">
+				<label>Business name</label>
+				<input type="text" name="bname" >
+			</div>
+			<div class="input">
+				<label>Address</label>
+				<input type="text" name="address">
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+
+
+		let uploadedImageData;
+		$(".input").hide()
+
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.readAsDataURL(input.files[0]);
+
+				reader.onload = function (e) {
+					let canvas = $("#canvas").get(0);
+					var context = canvas.getContext("2d");
+					var img = new Image();
+					img.src = e.target.result;
+					img.onload = function () {
+						uploadedImageData = img;
+						context.drawImage(img, 0, 0, canvas.width, canvas.height);
+						$(".input").show()
+					};
+				};
+			}
+		}
+
+		function showInputs(){
+			$(".input").hide()
+		}
+
+		$("input[type=text]").keyup(function(){
+				let itsCanvas = $("#canvas").get(0);
+				let name = $("input[name='name']")[0].value
+				let baname = $("input[name='bname']")[0].value
+				let addr = $("input[name='address']")[0].value
+
+				var context = itsCanvas.getContext("2d");
+				console.log("redrawing canvas")
+				context.clearRect(0, 0, itsCanvas.width, itsCanvas.height);
+				var update = true;
+				requestAnimationFrame(renderFunction);
+
+				function renderFunction(){
+					if(update){
+						update = false;
+						if (uploadedImageData) {
+							context.drawImage(uploadedImageData, 0, 0, itsCanvas.width, itsCanvas.height);
+						}
+
+
+						context.fillStyle = "#F5F121";
+						context.font = "22px sans-serif";
+
+						context.fillText(name, 20, 50);
+						context.fillText(baname, 20, 100);
+						context.fillText(addr, 20, 150);
+
+					}
+					requestAnimationFrame(renderFunction);
+				}
+			})
+
+	</script>
+
+</body>
+</html>
