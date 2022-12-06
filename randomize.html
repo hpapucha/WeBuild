@@ -4,24 +4,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <head>
-      <link rel="stylesheet" href="normalize.css">
-      <link rel="stylesheet" href="style.css">
-      <script defer src="script.js"></script>
+      <link href="./randomize.css" rel="stylesheet" />
+
 
     </head>
 
     <body>
-
-      <div class="wrapper"> <!-- start of wrapper grid -->
-
-      <!-- Pedro work on html  -->
-
-      <!-- GRID ROW 1  -->
+                      <!------ Archana's work --------->
+                      
       <header class="main-header">
         <div class="container">
+          <div>
           <h1 class="WB-logo">
             <a href="index.html"><img src="assets/WB.png" srcset="assets/WB.svg 1x, assets/WB.svg 2x" width="300" height="300" alt="Flexbox Demo"></a>
           </h1>
+        </div> 
+        <div>
           <nav class="main-nav">
             <ul class="main-nav-list">
               <li>
@@ -30,38 +28,86 @@
               <li>
                 <a href="./aboutus.html">ABOUT</a>
               </li>
-             
+              
               <li>
-                <a href="#">LOG IN</a>
+                <a href="./logIn.html">LOG IN</a>
+              </li>
+              <li id="logout" class="logout__btn">
+                Log out
               </li>
             </ul>
+         
           </nav>
+        </div>
         </div>
       </header>
 
-      <!-- Pedro work on html  -->
-      
-      <!-- GRID ROW 2 -->
-    <section class = "weBuild">
-      
-      
-  </section>
+      <div class="header_container">
+      <h1 class="header_random">CHOOSE BY APPEARANCE</h1>
+      <p>Try out yourself, how your business card looks like</p>
+      </div>
 
-    <!-- GRID ROW 3 -->
-
-      <section class="feature-selection">
-        
-  </section>
-        
-
-
-    <!-- GRID ROW 4 -->    
-   <!--information_of_product-->  
-    <section class="information-product">
+      <div>
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium voluptate, fuga odit beatae magni commodi reiciendis numquam sapiente nulla debitis in deleniti, quibusdam voluptatum asperiores, illo doloremque aspernatur minima? Exercitationem.</p>
+      </div>
      
-    </section>
+
+     <div class="temp_container">  
+      <div class="temp_wrapper">
+            <div class="temp_card__1">
+              <div class="temp_card_right">
+                <h1 class="fullnamefield">Full name</h1>
+                <p class="titlefield">Job Title</p>
+                </div>
+                <div class="temp_card_left">
+
+                <h2 class="numberfield">Phone Number</h2>
+                <p  class="emailfield">Email</p>
+                </div>
+            
+              </div>
+              <div style="display: flex; justify-content: center;">
+                <button class="temp_form_btn">Download</button>
+              </div>
+                  <div class="temp_card__2">
+                    <div class="temp_card_right_2">
+                      <h1 class="fullnamefield">Full name</h1>
+                      <p class="titlefield">Job Title</p>
+                      </div>
+                      <div class="temp_card_left_2">
+              
+                      <h2 class="numberfield">Phone Number</h2>
+                      <p class="emailfield">Email</p>
+                      </div>
+                   </div>
+                   <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+                    <button class="temp_form_btn">Download</button>
+                  </div>
+                  </div>  
+
+               
+        
+   
+     <div>
+     <form class="temp_form">
+      <label for="fullname">Full Name</label>
+      <input type="text" name="fullname" placeholder="Enter your full name" id="fullname" />
+      <label for="jobtitle"> Job Title</label>
+      <input type="text" name="jobtitle" placeholder="Enter your job title" id="jobtitle"/>
+      <label for="phone">Phone Number</label>
+      <input type="number" name="phone" placeholder="Enter your phone number" id="phone"/>
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Enter your email" id="email"/>
+      <button class="temp_form_btn" id="temp_form_btn">Submit</button>
+      </form>
+    </div>
+
+
+
+
+   </div>
     
-    <!-- GRID ROW 5 -->
+
 
     <footer class="footer">
       <div class="footer-content">
@@ -72,15 +118,20 @@
           <p>Copyright ©<a href="#">WeBuild</a>  </p>
                   <div class="footer-menu">
                     <ul class="f-menu">
-                      <li><a href="">Home</a></li>
-                      <li><a href="">About</a></li>
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./aboutus.html">About</a></li>
                       <li><a href="">GitHub</a></li>
                     </ul>
                   </div>
       </div>
 
   </footer>
-   <!-- end of wrapper div-->
+
+    <script defer src="script.js"></script>
+    <script src="./randomize.js"></script>
+
+
+      <!-- Archana's work end -->
     </body>
 </html>
 

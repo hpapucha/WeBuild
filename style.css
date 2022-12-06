@@ -696,6 +696,15 @@ input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, sel
   color: yellow;
 }
 
+.login-btn {
+  background-color: #343534;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 
 /* Change styles for signup button on extra small screens */
 @media screen and (max-width: 300px) {

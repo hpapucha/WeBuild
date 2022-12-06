@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet"/>
+    <title>SignUp</title>
+ 
+</head>
+<body>
+            <!------------- Archana's Work  ------------------->
+
+    <form>
+        <div class="register__container">
+          <h1 class="register__header">Sign Up</h1>
+          <p class="register__desc">Please fill in this form to create an account.</p>
+      
+              <label for="email"><b>Username</b></label>
+          <input type="text" name="username" id="username" placeholder="Enter Username" >
+          <label for="email"><b>Email</b></label>
+          <input type="text" id="email" placeholder="Enter Email" name="email" >
+          
+          <label for="psw"><b>Password</b></label>
+          <input type="password" id="password" placeholder="Enter Password" name="psw">
+         
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          <h4>Already have an account.? <a class="register__link" href="./logIn.html">Click here...</a></h4>
+          <div class="clearfix">
+      
+            <button type="submit" id="signUp" class="btn login-btn">Sign Up</button>
+
+            <button id="googleSigin " class="login-btn">Sign In With Google</button>
+          </div>
+        </div>
+      </form>
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult   } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCFMFIkpxJ_RY5KrVs0YzUCRYhQZLVUDNk",
+          authDomain: "webuild-d1bc8.firebaseapp.com",
+          databaseURL: "https://webuild-d1bc8-default-rtdb.firebaseio.com",
+          projectId: "webuild-d1bc8",
+          storageBucket: "webuild-d1bc8.appspot.com",
+          messagingSenderId: "671061428239",
+          appId: "1:671061428239:web:a631ba3c296fc9b3be3b7a",
+          measurementId: "G-4TE9T9EEMH"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+    
+      
+    
+        // var signup = document.getElementById("signUp");
+        // console.log(signup)
+        signUp.addEventListener("click",(e) =>{
+            e.preventDefault()
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var username = document.getElementById("username").value;
+    
+    
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+    
+                    set(ref(database, 'users/' + user.uid),{
+                        username : username,
+                        email : email
+                    })
+                    alert("User created.!")
+                    window.location.href ="./logIn.html"
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(errorMessage);
+                    // ..
+                });
+        })
+    
+    
+        const provider = new GoogleAuthProvider();
+    
+    
+        const googleSigin = document.getElementById("googleSigin");
+        googleSigin.addEventListener("click", function(e){
+            e.preventDefault();
+    
+          console.log(provider)
+            signInWithPopup(auth, provider)
+            .then((result) => {
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                const user = result.user;
+                // window.location.assign('./index')
+               
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    
+         
+           signInWithRedirect(auth, provider);
+    
+           getRedirectResult(auth)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access Google APIs.
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+    
+                // The signed-in user info.
+                const user = result.user;
+            }).catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // The email of the user's account used.
+                const email = error.customData.email;
+                // The AuthCredential type that was used.
+                const credential = GoogleAuthProvider.credentialFromError(error);
+                // ...
+            });
+    //         signInWithRedirect(auth, provider)
+    //   .then((result) => {
+    //     // This gives you a Google Access Token. You can use it to access the Google API.
+    //     const credential = GoogleAuthProvider.credentialFromResult(result);
+    //     const token = credential.accessToken;
+    //     // The signed-in user info.
+    //     const user = result.user;
+    //     // ...
+    //   }).catch((error) => {
+    //     // Handle Errors here.
+    //     const errorCode = error.code;
+    //     const errorMessage = error.message;
+    //     // The email of the user's account used.
+    //     const email = error.customData.email;
+    //     // The AuthCredential type that was used.
+    //     const credential = GoogleAuthProvider.credentialFromError(error);
+    //     // ...
+    //   });
+        })
+      </script>
+
+   
+</body>
+
+
+</html>
