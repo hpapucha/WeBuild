@@ -314,11 +314,16 @@ font-family: 'Outfit';
     margin: 20px;
     border-radius: 25px;
     padding: 40px;
+    text-align: center;
+    
+    
+    
 }
  
 .feature p {
     font-weight: 600;
-    color: #161616;
+    color: black;
+    
 }
 
 /*feature2 */
@@ -327,6 +332,7 @@ font-family: 'Outfit';
     padding: 40px;
     border-radius: 25px;
     margin: 20px;
+    text-align: center;
     }
 
 .feature-middle p {
