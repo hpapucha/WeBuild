@@ -102,8 +102,9 @@ body {
   
   width: 100%;
   min-height: 100vh;
-  background-image: url("assets/circles.webp");
-  background-repeat: repeat;
+  /* background-image: url("assets/circles.webp");
+  background-repeat: repeat; */
+  background-color: #bff4ed;
   font-family: 'Outfit', Roboto;
   }
   @media screen and (min-width: 801px){
@@ -253,7 +254,7 @@ font-family: 'Outfit';
     margin: 60px auto;
     align-items: center;
 	  justify-content: space-around;
-    background: #f70776; 
+    background: #c3195d;
     min-height: 20em;
     width:95vw;
 	  
