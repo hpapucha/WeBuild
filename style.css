@@ -34,7 +34,7 @@ img {
 }
 
 a:hover {
-    color: yellow;
+    color: white;
 }
 
 .main-nav ul {
@@ -78,7 +78,7 @@ a:hover {
 }
 
 .main-header {
-  background-color: #C2B4A9;
+  background-color: #f70776; 
   border-radius: 10px;
   max-height: 7em;
 }
@@ -130,7 +130,7 @@ body {
 
 @media screen and (min-width: 801px) {
   .weBuild {
-    background: antiquewhite;
+    background: #c3195d;
     grid-area: weBuild;
     position: relative;
     width: 99vw;
@@ -216,7 +216,7 @@ font-family: 'Outfit';
     left: 2em;
     top: 10em;
     margin-top: 3em;
-    background: #e8c77c;
+    background: #bff4ed; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     border-radius: 3px;
@@ -229,7 +229,7 @@ font-family: 'Outfit';
     .explore {
       position: relative;
       text-align: center;
-      background: #e8c77c;
+      background: #bff4ed; 
       /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 25px; */
       box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.07);
@@ -241,6 +241,7 @@ font-family: 'Outfit';
 .explore:hover{
   width:5em;
   height: 1.4em;
+  color: black;
 }
 
   /*feature-selection*/
@@ -252,7 +253,7 @@ font-family: 'Outfit';
     margin: 60px auto;
     align-items: center;
 	  justify-content: space-around;
-    background: antiquewhite;
+    background: #f70776; 
     min-height: 20em;
     width:95vw;
 	  
@@ -354,7 +355,7 @@ font-family: 'Outfit';
 
 .design:hover {
  background-color:rgba(255, 255, 255, 0.65); 
- color: black;
+ color: white;
 }
   
 
@@ -387,12 +388,12 @@ font-family: 'Outfit';
 
 .randomize:hover {
   background-color:rgba(255, 255, 255, 0.65); 
-  color: black;
+  color: white;
 }
 
 .information-product {
   grid-area: information-product;
-  background: antiquewhite;
+  background: #c3195d; 
 }
 
   /* FOOTER CODE */
@@ -422,7 +423,7 @@ font-family: 'Outfit';
     flex-direction: column;
     text-align: center;
     flex-flow: row;
-    background: #C2B4A9;
+    background: #f70776; 
     max-height: 20vh;
     
 }
@@ -441,7 +442,7 @@ font-family: 'Outfit';
 }
 
 .footer-bottom{
-    background: #C2B4A9;
+    background: #f70776; 
     width: 100vw;
     /* padding: 20px; */
     padding-bottom: 40px;
@@ -482,7 +483,7 @@ display: block;
   text-decoration: none;
 }
 .footer-menu ul li a:hover{
-  color: yellow;
+  color: white;
 }
       
 @media (max-width:500px) {
@@ -553,7 +554,7 @@ display: block;
 }
 
 nav{
-  background-color: #C2B4A9;    ;
+  background-color: #f70776;    ;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -635,7 +636,7 @@ box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
 }
 
 .register__link:hover{
-  color: #343534;
+  color: white;
 }
 
 
@@ -693,7 +694,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, sel
 
  button:hover {
   opacity:1;
-  color: yellow;
+  color: white;
 }
 
 .login-btn {

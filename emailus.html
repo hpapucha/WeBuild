@@ -41,16 +41,16 @@
         <h1>Contact Form</h1>
         <form name="contactForm" action="https://formsubmit.co/xristo_pm@yahoo.com" method="post">
           <label for="name">Name</label>                                                          
-          <input type="text" id="name" name="name" placeholder="Your name" >
+          <input type="text" id="name" name="name" placeholder="Your name" required minlength="2">
  
           <label for="email">Email</label>
-          <input type="text" placeholder="Email address" id="email" name="email" >
+          <input type="text" placeholder="Email address" id="email" name="email" required>
 
           <label for="phone">Phone</label>
-          <input type="text" placeholder="Phone number" id="phone" name="phone" >
+          <input type="text" placeholder="Phone number" id="phone" name="phone" required maxlength="10" pattern="[0-9]+">
      
           <label for="subject">Message</label>
-          <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+          <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject" required></textarea>
                      
           <input type="submit" name="submit" value="Submit"></button>
         </form>   
