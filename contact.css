@@ -1,9 +1,13 @@
+html {
+  scroll-behavior: smooth;
+ }  
+  
   .form-container {
     width: 50%;
     margin: auto;
     padding: 2%;
     border: 1px solid #f7f7f7;
-    background: antiquewhite;
+    background-color: #ececec;
     
     text-align: center;
   }
@@ -79,7 +83,7 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #343534;
+    color: black;
     text-decoration: none;
   }
   .main-nav ul {
@@ -88,7 +92,7 @@
   }
 
   a:hover {
-    color: yellow;
+    color: white;
 }
   
   .container {
@@ -131,7 +135,7 @@
   }
   
   .main-header {
-    background-color: #C2B4A9;
+    background-color: #385170; 
     border-radius: 25px;
     max-height: 7em;
   }
@@ -157,8 +161,7 @@
     min-height: 100vh;
     /* background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%); */
     font-family: sans-serif;
-    background-image: url("assets/circles.webp");
-    background-repeat: repeat;
+    background-color: #9fd3c7;
     font-family: 'Outfit', Roboto;
     }
     @media screen and (min-width: 801px){
@@ -442,6 +445,25 @@
    background-color:rgba(255, 255, 255, 0.65); 
    color: black;
   }
+
+  .submit{
+    background-color: #385170;
+  }
+
+  .submit:hover{
+    color: white;
+  }
+
+  .submitEmail{
+    background-color: #385170;
+    width: 45vw;
+    margin-top: 1em;
+    min-height: 3em;
+  }
+
+  .submitEmail:hover{
+    color: white;
+  }
     
   
   .survey {
@@ -509,7 +531,7 @@
       flex-direction: column;
       text-align: center;
       flex-flow: row;
-      background: #C2B4A9;
+      background: #385170;
       max-height: 20vh;
   }
   .footer-content h3{
@@ -527,7 +549,7 @@
   }
   
   .footer-bottom{
-      background: #C2B4A9;
+      background: #385170;
       width: 100vw;
       /* padding: 20px; */
       padding-bottom: 40px;
@@ -567,7 +589,7 @@
     text-decoration: none;
   }
   .footer-menu ul li a:hover{
-    color: yellow;
+    color: white;
   }
         
   @media (max-width:500px) {

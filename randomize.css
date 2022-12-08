@@ -6,7 +6,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(assets/circles.webp);
+  background-color: #9fd3c7;
 }
   
 
@@ -35,12 +35,12 @@ body{
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #343534;
+  color: black;
   text-decoration: none;
 }
 
 .main-header {
-  background-color: #C2B4A9;
+  background-color: #385170;
   border-radius: 10px;
   max-height: 7em;
 }
@@ -174,7 +174,7 @@ body{
         flex-direction: column;
         text-align: center;
         flex-flow: row;
-        background: #C2B4A9;
+        background: #385170; 
         max-height: 20vh;
     }
     .footer-content h3{
@@ -192,7 +192,7 @@ body{
     }
     
     .footer-bottom{
-        background: #C2B4A9;
+        background: #385170; 
         /* padding: 20px; */
         padding-bottom: 40px;
         text-align: center;
@@ -231,7 +231,7 @@ body{
       text-decoration: none;
     }
     .footer-menu ul li a:hover{
-      color: yellow;
+      color: white;
     }
           
 

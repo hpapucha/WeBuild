@@ -26,18 +26,22 @@ html {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #343534;
+    color: black;
     text-decoration: none;
     
   }
   
   a:hover {
-      color: yellow;
+      color: white;
   }
   
   .main-nav ul {
     margin: 0;
     padding: 0;
+  }
+
+  .main-nav {
+    background-color: #385170;
   }
   
   .container {
@@ -76,7 +80,7 @@ html {
   }
   
   .main-header {
-    background-color: #C2B4A9;
+    background-color: #385170;
     border-radius: 10px;
     max-height: 7em;
   }
@@ -102,8 +106,7 @@ html {
     min-height: 100vh;
     /* background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%); */
     /* background: whitesmoke; */
-    background-image: url("assets/circles.webp");
-    background-repeat: repeat;
+    background-color: #9fd3c7; 
     font-family: 'Outfit', Roboto;
     }
     @media screen and (min-width: 801px){
@@ -473,7 +476,7 @@ html {
       flex-direction: column;
       text-align: center;
       flex-flow: row;
-      background: #C2B4A9;
+      background: #385170;
       max-height: 20vh;
   }
   .footer-content h3{
@@ -491,7 +494,7 @@ html {
   }
   
   .footer-bottom{
-      background: #C2B4A9;
+      background: #385170;
       width: 100vw;
       /* padding: 20px; */
       padding-bottom: 40px;
@@ -531,7 +534,7 @@ html {
     text-decoration: none;
   }
   .footer-menu ul li a:hover{
-    color: yellow;
+    color: white;
   }
         
   @media (max-width:500px) {
@@ -738,7 +741,7 @@ html {
   
    button:hover {
     opacity:1;
-    color: yellow;
+    color: #385170;
   }
   
   

@@ -28,7 +28,7 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #343534;
+  color: black;
   text-decoration: none;
   
 }
@@ -78,7 +78,7 @@ a:hover {
 }
 
 .main-header {
-  background-color: #f70776; 
+  background-color: #385170; 
   border-radius: 10px;
   max-height: 7em;
 }
@@ -104,7 +104,7 @@ body {
   min-height: 100vh;
   /* background-image: url("assets/circles.webp");
   background-repeat: repeat; */
-  background-color: #bff4ed;
+  background-color: #ececec; 
   font-family: 'Outfit', Roboto;
   }
   @media screen and (min-width: 801px){
@@ -131,7 +131,7 @@ body {
 
 @media screen and (min-width: 801px) {
   .weBuild {
-    background: #c3195d;
+    background: #9fd3c7; 
     grid-area: weBuild;
     position: relative;
     width: 99vw;
@@ -254,7 +254,7 @@ font-family: 'Outfit';
     margin: 60px auto;
     align-items: center;
 	  justify-content: space-around;
-    background: #c3195d;
+    background: #9fd3c7; 
     min-height: 20em;
     width:95vw;
 	  
@@ -355,7 +355,7 @@ font-family: 'Outfit';
 }
 
 .design:hover {
- background-color:rgba(255, 255, 255, 0.65); 
+ background-color:#385170;
  color: white;
 }
   
@@ -388,13 +388,13 @@ font-family: 'Outfit';
 }
 
 .randomize:hover {
-  background-color:rgba(255, 255, 255, 0.65); 
+  background-color:#385170;
   color: white;
 }
 
 .information-product {
   grid-area: information-product;
-  background: #c3195d; 
+  background: #9fd3c7; 
 }
 
   /* FOOTER CODE */
@@ -424,7 +424,7 @@ font-family: 'Outfit';
     flex-direction: column;
     text-align: center;
     flex-flow: row;
-    background: #f70776; 
+    background: #385170;
     max-height: 20vh;
     
 }
@@ -443,7 +443,7 @@ font-family: 'Outfit';
 }
 
 .footer-bottom{
-    background: #f70776; 
+    background: #385170; 
     width: 100vw;
     /* padding: 20px; */
     padding-bottom: 40px;
@@ -555,7 +555,7 @@ display: block;
 }
 
 nav{
-  background-color: #f70776;    ;
+  background-color: #385170;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -566,8 +566,8 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(20, 20, 20);
-  color: #fff;
+  background-color: #9fd3c7;
+  color: black;
   height: 400px;
 }
 
@@ -764,7 +764,7 @@ canvas {
 }
 #canvasID {
   z-index: 9999;
-} */
+}
 
 .wrapper{
 }
@@ -799,6 +799,7 @@ input{
   width: 100%;
   max-height: 10px;
 }
+
 
 
 

@@ -27,13 +27,13 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #343534;
+  color: black;
   text-decoration: none;
   
 }
 
 a:hover {
-    color: yellow;
+    color: white;
 }
 
 .main-nav ul {
@@ -59,6 +59,10 @@ a:hover {
 
 }
 
+.main-nav {
+  background-color: #385170;
+}
+
 .main-nav ul {
 	margin: 1em 0 .5em;
 	text-align: center;
@@ -77,7 +81,7 @@ a:hover {
 }
 
 .main-header {
-  background-color: #C2B4A9;
+  background-color: #385170; 
   border-radius: 10px;
   max-height: 7em;
 }
@@ -103,8 +107,7 @@ body {
   min-height: 100vh;
   /* background: linear-gradient(180deg, #161616 0%, #F6EBD5 100%); */
   /* background: whitesmoke; */
-  background-image: url("assets/circles.webp");
-  background-repeat: repeat;
+  background-color: #9fd3c7;
   font-family: 'Outfit', Roboto;
   }
   @media screen and (min-width: 801px){
@@ -474,7 +477,7 @@ font-family: 'Outfit';
     flex-direction: column;
     text-align: center;
     flex-flow: row;
-    background: #C2B4A9;
+    background: #385170; 
     max-height: 20vh;
 }
 .footer-content h3{
@@ -492,7 +495,7 @@ font-family: 'Outfit';
 }
 
 .footer-bottom{
-    background: #C2B4A9;
+    background: #385170; 
     width: 100vw;
     /* padding: 20px; */
     padding-bottom: 40px;
@@ -532,7 +535,7 @@ display: block;
   text-decoration: none;
 }
 .footer-menu ul li a:hover{
-  color: yellow;
+  color: white;
 }
       
 @media (max-width:500px) {
@@ -724,7 +727,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, sel
 
 /* Set a style for download button */
 .cardDownload {
-  background-color: #C2B4A9;
+  background-color: #385170; 
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
