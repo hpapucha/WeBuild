@@ -15,10 +15,10 @@ $(document).ready(function(){
     $("input[type=text]").keyup(function(){
         let itsCanvas = $(this).closest(".image-column").find("canvas")[0]
         let name = $(this).closest(".inputs-wrapper").find("input[name='name']")[0].value
-        let nameHard = "Name";
-        let companyHard = "Company";
-        let locationHard = "Address";
-        let phoneHard = "Phone";
+        let nameHard = "Name:";
+        let companyHard = "Company:";
+        let locationHard = "Address:";
+        let phoneHard = "Phone:";
         let baname = $(this).closest(".inputs-wrapper").find("input[name='bname']")[0].value
         let addr = $(this).closest(".inputs-wrapper").find("input[name='address']")[0].value
         let phone = $(this).closest(".inputs-wrapper").find("input[name='phone']")[0].value
@@ -39,18 +39,18 @@ $(document).ready(function(){
                 update = false;
                 context.drawImage(img, 0, 0);
 
-                context.fillStyle = "#28282B";
-                context.font = "20px imperial";
+                context.fillStyle = "#000000";
+                context.font = "25px Fantasy";
                 
                 
                 context.fillText(nameHard, 20, 25);
-                context.fillText(name, 40, 50);
+                context.fillText(name, 5, 50);
                 context.fillText(companyHard, 20, 75);
-                context.fillText(baname, 40, 100);
+                context.fillText(baname, 5, 100);
                 context.fillText(locationHard, 20, 150);
-                context.fillText(addr, 40, 175);
+                context.fillText(addr, 5, 175);
                 context.fillText(phoneHard, 20, 200);
-                context.fillText(phone, 40, 225);
+                context.fillText(phone, 5, 225);
                 
 
             }

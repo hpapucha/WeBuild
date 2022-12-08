@@ -12,10 +12,6 @@
     <body>
 
       <div class="wrapper"> <!-- start of wrapper grid -->
-
-      <!-- Pedro work on html  -->
-
-      <!-- GRID ROW 1  -->
       <header class="main-header">
         <div class="container">
           <h1 class="WB-logo">
@@ -42,8 +38,11 @@
       <!-- GRID ROW 2 -->
 
     <!-- GRID ROW 3 -->
+    
+
 
       <section class="feature-selection">
+        <div class="designSlogan">UPLOAD YOUR OWN DESIGN</div>
         <div class="page">
             <div class="image-wrapper">
                 <canvas id="canvas" width="400" height="280"></canvas>
@@ -57,19 +56,19 @@
                 </div>
                 <div class="input">
                     <label>Your name</label>
-                    <input type="text" name="name" >
+                    <input type="text" name="name" maxlength="26">
                 </div>
                 <div class="input">
                     <label>Business name</label>
-                    <input type="text" name="bname" >
+                    <input type="text" name="bname" maxlength="26">
                 </div>
                 <div class="input">
                     <label>Address</label>
-                    <input type="text" name="address">
+                    <input type="text" name="address" maxlength="26">
                 </div>
                 <div class="input">
                     <label>Phone</label>
-                    <input type="text" name="phone">
+                    <input type="text" name="phone" maxlength="11">
                 </div>
                 <div class="input">
                     <button type="button" class="cardDownload">Download</button> 
@@ -82,15 +81,7 @@
 
     
   </section>
-        
-
-
-    <!-- GRID ROW 4 -->    
-   <!--information_of_product-->  
-
-    
-    <!-- GRID ROW 5 -->
-
+      
     <footer class="footer">
       <div class="footer-content">
         <img src="assets/WB.svg" alt="logo" class="logoFooter">
@@ -147,7 +138,11 @@
 				let name = $("input[name='name']")[0].value
 				let baname = $("input[name='bname']")[0].value
 				let addr = $("input[name='address']")[0].value
-                let phone = $("input[name='phone']")[0].value
+        let phone = $("input[name='phone']")[0].value
+        let nameHard = "Name:";
+        let companyHard = "Company:";
+        let locationHard = "Address:";
+        let phoneHard = "Phone:";
 
 				var context = itsCanvas.getContext("2d");
 				console.log("redrawing canvas")
@@ -163,13 +158,22 @@
 						}
 
 
-                        context.fillStyle = "#28282B";
-                        context.font = "20px imperial";
+            context.fillStyle = "#000000";
+                context.font = "25px Fantasy";
+            // context.fillText(name1, 10, 20);
+						// context.fillText(name, 10, 50);
+						// context.fillText(baname, 10, 100);
+						// context.fillText(addr, 10, 150);
+            // context.fillText(phone, 10, 200);
 
-						context.fillText(name, 20, 50);
-						context.fillText(baname, 20, 100);
-						context.fillText(addr, 20, 150);
-                        context.fillText(phone, 20, 200);
+                context.fillText(nameHard, 20, 25);
+                context.fillText(name, 5, 50);
+                context.fillText(companyHard, 20, 75);
+                context.fillText(baname, 5, 100);
+                context.fillText(locationHard, 20, 150);
+                context.fillText(addr, 5, 175);
+                context.fillText(phoneHard, 20, 200);
+                context.fillText(phone, 5, 225);
 
 					}
 					requestAnimationFrame(renderFunction);

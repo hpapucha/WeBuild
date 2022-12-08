@@ -726,7 +726,7 @@ html {
   
   /* Set a style for download button */
   .cardDownload {
-    background-color: #C2B4A9;
+    background-color: #385170;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -741,7 +741,7 @@ html {
   
    button:hover {
     opacity:1;
-    color: #385170;
+    color: white;
   }
   
   
@@ -750,7 +750,7 @@ html {
     margin: auto;
 }
 .image-wrapper{
-    background: #cacaca;
+    background: white;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
