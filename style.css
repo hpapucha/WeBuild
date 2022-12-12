@@ -4,11 +4,12 @@ html {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 8em 40em 40em 60em 10em;
+  grid-template-rows: 8em 0em 40em 40em 60em 10em;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   grid-template-areas:
     'main-header'
+    'greetings'
     'weBuild'
     'feature-selection'
     'information-product'
@@ -61,6 +62,8 @@ a:hover {
 }
 
 .main-nav ul {
+  display: flex;
+  align-items: center;
 	margin: 1em 0 .5em;
 	text-align: center;
 }
@@ -504,7 +507,7 @@ display: block;
 
 
 .banner_card {
-  background-color: #1B1915;
+  background-color:#0f20208c;
   height: 200px;
   width: 700px;
   border-radius: 80px;
@@ -512,7 +515,7 @@ display: block;
   display: flex;
   justify-content: space-between;
   padding: 40px;
-  color: #C2B4A9;
+  color: #c6e1e1;
   position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -525,7 +528,7 @@ display: block;
   font-size: 16px;
 }
 .banner_card_right img{
-  background: #C2B4A9;
+  background: #a4c1ba;
 
 
   
@@ -548,7 +551,7 @@ display: block;
 
 .banner_card_left h3 {
   font-size: 14px;
-  background: #C2B4A9;
+  background: #a4c1ba;
   color: #000000;
   padding: 10px 10px;
   border-radius: 30px;
@@ -569,6 +572,10 @@ nav{
   background-color: #9fd3c7;
   color: black;
   height: 400px;
+}
+
+.form_container {
+  background-color: #385170;
 }
 
 

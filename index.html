@@ -30,7 +30,8 @@
               </li>
               
               <li>
-                <a href="./logIn.html">LOG IN</a>
+                <h4 id="useremail" style="margin-right:10px"></h4>
+                <a href="./logIn.html" id="loginBtn">LOG IN</a>
               </li>
               <li id="logout" class="logout__btn">
                 Log out
@@ -44,10 +45,22 @@
       <!-- Pedro work on html  -->
       
       <!-- GRID ROW 2 -->
+      <section class="greetings">
+        <div id="greetings" style="text-align: center">
+
+        </div>
+
+      </section>
+
+
+  
   
   <section class = "weBuild">
+
+  
       
       <div class="siteName">WeBuild</div>
+    
       <div class="slogan">WHERE YOU WILL FIND YOUR BUSSINESS CARD</div>
       <button class="explore" onClick="document.getElementById('feature-selection').scrollIntoView();">EXPLORE</button>
  
@@ -285,6 +298,15 @@
           if (user) {
               // User is signed in, see docs for a list of available properties
               // https://firebase.google.com/docs/reference/js/firebase.User
+              const useremail= document.getElementById("useremail");
+              const loginBtn = document.getElementById("loginBtn");
+              const greetings = document.getElementById("greetings");
+              loginBtn.style.display = "none";
+
+              const headerName = document.createElement("h1");
+              headerName.innerText ="Hi " + user.displayName || user.email;
+              greetings.appendChild(headerName);
+              useremail.innerText = user.displayName || user.email;
               const uid = user.uid;
               // ...
           } else {
