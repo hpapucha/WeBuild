@@ -315,7 +315,7 @@ font-family: 'Outfit';
 
 /*feature1 and feature3 */
 .feature {
-    background-color: rgba(194,180,169,1);
+    background-color: #0f20208c;
     margin: 20px;
     border-radius: 25px;
     padding: 40px;
@@ -327,13 +327,13 @@ font-family: 'Outfit';
  
 .feature p {
     font-weight: 600;
-    color: black;
+    color: #fff;
     
 }
 
 /*feature2 */
 .feature-middle {
-    background-color: #C2B4A9;
+    background-color: #0f20208c;
     padding: 40px;
     border-radius: 25px;
     margin: 20px;
@@ -342,7 +342,7 @@ font-family: 'Outfit';
 
 .feature-middle p {
     font-weight: 600;
-    color: black;
+    color: #fff;
 }
 
 
